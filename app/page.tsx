@@ -8,10 +8,8 @@ import FloatingChatButton from "@/components/FloatingChatButton";
 export default function Home() {
   return (
     <main>
-      <LazySection>
         <HeroSection />
         <DestinationsSection />  
-      </LazySection>
       <FloatingChatButton />
     </main>
   );
