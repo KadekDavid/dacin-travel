@@ -21,7 +21,7 @@ export default function HeroSection() {
 
         {/* IMAGE - kanan, di mobile tengah */}
         <div className="flex justify-center lg:justify-end">
-          <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px] xl:w-[520px] xl:h-[520px] rounded-xl overflow-hidden shadow-1xl">
+          <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px] xl:w-[520px] xl:h-[520px] rounded-1xl overflow-hidden shadow-3xl">
             <Image
               src="/assets/images/hero-home.jpg"
               alt="Bali Tour Destination"
