@@ -1,0 +1,118 @@
+{
+  "ijen": [
+    {
+      "id": 1,
+      "title": "Open Trip Banyuwangi",
+      "type": "OPEN TRIP",
+      "duration": "Paket 1 Hari",
+      "name": "Ijen Crater Blue Fire",
+      "price": "Rp 350.000",
+      "image": "/assets/images/pack-1-ijen.avif"
+    },
+    {
+      "id": 2,
+      "title": "Open Trip Banyuwangi",
+      "type": "OPEN TRIP",
+      "duration": "Paket 1 Hari",
+      "name": "Ijen & Baluran Sunset",
+      "price": "Rp 450.000",
+      "image": "/assets/images/pack-2-ijen.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Open Trip Banyuwangi",
+      "type": "OPEN TRIP",
+      "duration": "Paket 2 Hari 1 Malam",
+      "name": "Ijen - De Djawatan - Pulau Merah",
+      "price": "Rp 650.000",
+      "image": "/assets/images/pack-3-ijen.jpg"
+    }
+  ],
+  "bali": [
+    {
+      "id": 1,
+      "title": "Paket Tour Bali",
+      "type": "OPEN TRIP",
+      "duration": "Paket 3 Hari 2 Malam",
+      "name": "Ubud, Kintamani, Tanah Lot",
+      "price": "Rp 1.200.000",
+      "image": "/assets/images/pack-1-bali.webp"
+    },
+    {
+      "id": 2,
+      "title": "Paket Tour Bali",
+      "type": "OPEN TRIP",
+      "duration": "Paket 2 Hari 1 Malam",
+      "name": "Nusa Penida Island Tour",
+      "price": "Rp 750.000",
+      "image": "/assets/images/pack-2-bali.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Paket Tour Bali",
+      "type": "PRIVATE TRIP",
+      "duration": "Paket 4 Hari 3 Malam",
+      "name": "Bali Explorer (Bedugul, Uluwatu)",
+      "price": "Rp 2.500.000",
+      "image": "/assets/images/pack-3-bali.jpeg"
+    }
+  ],
+  "baluran": [
+    {
+      "id": 1,
+      "title": "Baluran Safari",
+      "type": "OPEN TRIP",
+      "duration": "Paket 1 Hari",
+      "name": "Baluran Savannah & Pantai Bama",
+      "price": "Rp 280.000",
+      "image": "/assets/images/pack-1-bama.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Baluran Camping",
+      "type": "OPEN TRIP",
+      "duration": "Paket 2 Hari 1 Malam",
+      "name": "Camping di Bekol & Night Safari",
+      "price": "Rp 550.000",
+      "image": "/assets/images/pack-2-bama.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Baluran Private",
+      "type": "PRIVATE TRIP",
+      "duration": "Paket 1 Hari",
+      "name": "Private Jeep Safari & Bird Watching",
+      "price": "Rp 750.000",
+      "image": "/assets/images/pack-3-bama.webp"
+    }
+  ],
+  "djawatan": [
+    {
+      "id": 1,
+      "title": "Djawatan Forest Tour",
+      "type": "OPEN TRIP",
+      "duration": "Paket 1/2 Hari",
+      "name": "De Djawatan & Teluk Hijau",
+      "price": "Rp 250.000",
+      "image": "/assets/images/pack-1-djawatan.webp"
+    },
+    {
+      "id": 2,
+      "title": "Djawatan & Ijen Combo",
+      "type": "OPEN TRIP",
+      "duration": "Paket 2 Hari 1 Malam",
+      "name": "Djawatan - Ijen Midnight - Baluran",
+      "price": "Rp 850.000",
+      "image": "/assets/images/pack-2-djawatan.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Djawatan Photography",
+      "type": "PRIVATE TRIP",
+      "duration": "Paket 1 Hari",
+      "name": "Sunrise Photo Tour + Local Guide",
+      "price": "Rp 500.000",
+      "image": "/assets/images/pack-3-djawatan.jpg"
+    }
+  ]
+}

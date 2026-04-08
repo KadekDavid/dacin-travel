@@ -1,0 +1,24 @@
+[
+  {
+    "id": "luxury-relaxation",
+    "name": "Luxury & Relaxation",
+    "slug": "luxury-relaxation",
+    "image": "/assets/images/relax.png",
+    "tours": 3
+  },
+  {
+    "id": "adventure-culture",
+    "name": "Adventure & Culture",
+    "slug": "adventure-culture",
+    "image": "/assets/images/tree-house.webp",
+    "tours": 4
+  },
+  {
+    "id": "short-escape",
+    "name": "Short Escape",
+    "slug": "short-escape",
+    "image": "/assets/images/ESCAPE.jpg",
+    "tours": 1
+  }
+]
+
