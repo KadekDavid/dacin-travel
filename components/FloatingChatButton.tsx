@@ -23,7 +23,7 @@ export default function FloatingChatButton() {
       >
         {/* Replace the SVG with your image */}
         <Image 
-          src="/assets/images/whatsapp.png" // Path to your public file
+          src="https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444038/whatsapp_fywhdo.png" // Path to your public file
           alt="Chat Admin on WhatsApp"
           width={40} // Specify width
           height={40} // Specify height

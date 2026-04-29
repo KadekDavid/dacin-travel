@@ -35,7 +35,7 @@ export default function Footer() {
               <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm">
                 <li>
                   <Link
-                    href="/packages"
+                    href="/"
                     className="text-gray-400 hover:text-blue-600 transition block"
                   >
                     Package
@@ -43,7 +43,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/destinations"
+                    href="/artikel"
                     className="text-gray-400 hover:text-blue-600 transition block"
                   >
                     Article
@@ -51,7 +51,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/tentang"
                     className="text-gray-400 hover:text-blue-600 transition block"
                   >
                     About Us
