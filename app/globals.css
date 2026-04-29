@@ -10,11 +10,24 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: #fcfaef;
   color: #1f2937;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
 }
 
 body {
@@ -196,13 +209,6 @@ body {
   margin-bottom: 40px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-
 .card {
     position: relative;
     width: 100%;
@@ -269,7 +275,7 @@ body {
 
 @media (max-width: 768px) {
     .card {
-      height: 360px;
+      height: 340px;
     }
     .logo img {
         height: 36px;
@@ -281,15 +287,20 @@ body {
   
   @media (max-width: 480px) {
     .card {
-      height: 320px;
+      height: 300px;
+    }
+
+    .overlay {
+      bottom: 18px;
+      left: 18px;
+      right: 18px;
+    }
+
+    .overlay h3 {
+      font-size: 16px;
     }
   }
   
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media (max-width: 768px) {
     .hero {
       flex-direction: column;

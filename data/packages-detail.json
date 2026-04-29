@@ -1,0 +1,294 @@
+{
+  "luxury-relaxation": {
+    "destination": "Bali",
+    "title": "Customized Bali Tours for Your Perfect Holiday!",
+    "packages": [
+      {
+        "id": 1,
+        "slug": "premium-luxury-relaxation",
+        "name": "The Premium Package - Luxury Relaxation",
+        "type": "LUXURY",
+        "duration": "6 Days 5 Nights",
+        "location": "Nusa Dua",
+        "price": "Rp 8.500.000",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
+        "overview": "Enjoy the luxury of Bali with a stay at a 5-star resort in Nusa Dua. This package is designed for travelers who want to relax and experience Bali's beauty in premium style.",
+        "highlights": [
+          "Private airport transfer",
+          "Morning yoga by the beach",
+          "Half-day Balinese spa ritual",
+          "Fine dining dinner",
+          "Luxury catamaran cruise"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Arrival",
+            "activities": [
+              "Private airport transfer to Nusa Dua resort",
+              "Hotel orientation"
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Leisure at the resort",
+            "activities": [
+              "Morning yoga by the beach",
+              "Half-day Balinese spa ritual",
+              "Fine dining dinner at your resort"
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Culture & Elegance",
+            "activities": [
+              "Visit Uluwatu Temple with Kecak dance performance",
+              "Gourmet seafood dinner overlooking the cliffs"
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Ubud Day Trip",
+            "activities": [
+              "Private tour to Ubud: Monkey Forest, Tegallalang Rice Terraces",
+              "Lunch at a riverside restaurant",
+              "Evening return to Nusa Dua for relaxation"
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Island Escape",
+            "activities": [
+              "Luxury catamaran cruise to Nusa Penida or Lembongan",
+              "Snorkeling & beach picnic",
+              "Farewell dinner with Balinese cultural show"
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Departure",
+            "activities": [
+              "Leisure breakfast",
+              "Departure"
+            ]
+          }
+        ],
+        "included": [
+          "Private airport transfer",
+          "5 nights at 5-star accommodation",
+          "Daily breakfast",
+          "Professional tour guide",
+          "Private air-conditioned transportation",
+          "Mineral water during the tour"
+        ],
+        "excluded": [
+          "Flight tickets",
+          "Travel insurance",
+          "Personal expenses",
+          "Guide/driver tips"
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "premium-adventure",
+        "name": "Premium Package with 5 night stay at Kuta or Seminyak",
+        "type": "ADVENTURE",
+        "duration": "6 Days 5 Nights",
+        "location": "Kuta / Seminyak",
+        "price": "Rp 7.500.000",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "A perfect combination of Bali adventure and culture.",
+        "highlights": [
+          "Water sports: jet ski, parasailing, banana boat",
+          "White-water rafting Ayung River",
+          "Sunrise trek Mount Batur",
+          "Speedboat to Nusa Penida",
+          "Snorkeling with manta rays"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Arrival & Relaxation",
+            "activities": [
+              "Airport pickup and transfer to your hotel",
+              "Check-in and unwind with a traditional Balinese massage"
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Water Sports Day",
+            "activities": [
+              "Jet ski, parasailing, banana boat rides in Tanjung Benoa",
+              "Afternoon free time",
+              "Dinner at a local seafood restaurant"
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Ubud Adventure",
+            "activities": [
+              "White-water rafting on Ayung River",
+              "Visit Ubud Art Market & Monkey Forest",
+              "Dinner in Ubud before returning to hotel"
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Volcano & Culture",
+            "activities": [
+              "Sunrise trek at Mount Batur",
+              "Hot spring soak afterward",
+              "Afternoon visit to Tirta Empul Temple"
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Island Adventure",
+            "activities": [
+              "Speedboat to Nusa Penida",
+              "Explore Kelingking Beach, Broken Beach, Angel's Billabong",
+              "Snorkeling with manta rays",
+              "Return for farewell dinner"
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Departure",
+            "activities": [
+              "Breakfast & private transfer to airport"
+            ]
+          }
+        ],
+        "included": [
+          "Private airport transfer",
+          "5 nights at a 4-star hotel",
+          "Daily breakfast",
+          "Water sports equipment",
+          "Rafting equipment & guide",
+          "Speedboat to Nusa Penida"
+        ],
+        "excluded": [
+          "Flight tickets",
+          "Travel insurance",
+          "Personal expenses",
+          "Lunch"
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "premium-short-escape",
+        "name": "Three night stay Package at Seminyak or Kuta Area",
+        "type": "SHORT ESCAPE",
+        "duration": "4 Days 3 Nights",
+        "location": "Seminyak / Kuta",
+        "price": "Rp 4.500.000",
+        "image": "/assets/images/short-escape.webp",
+        "overview": "A short weekend escape package for an unforgettable Bali getaway.",
+        "highlights": [
+          "Sunset at Uluwatu with Kecak Dance",
+          "Ubud Monkey Forest & Rice Terraces",
+          "Tirta Empul Temple",
+          "Sunrise trek Mount Batur",
+          "Tegenungan Waterfall"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Arrival & Relaxation",
+            "activities": [
+              "Airport pickup and transfer to your hotel",
+              "Check-in and unwind with a traditional Balinese massage",
+              "Evening: Sunset at Uluwatu with Kecak Dance show followed by welcome dinner"
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Culture & Temples",
+            "activities": [
+              "Morning visit to Ubud Monkey Forest and Ubud Palace",
+              "Explore Tegallalang Rice Terraces",
+              "Afternoon: Tirta Empul Temple for spiritual cleansing ritual",
+              "Evening dinner at Ubud area"
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Adventure & Nature",
+            "activities": [
+              "Early morning trip to Mount Batur for sunrise trekking",
+              "Breakfast overlooking Lake Batur",
+              "Visit a coffee plantation to taste Luwak coffee",
+              "Afternoon: Relax at Tegenungan Waterfall",
+              "Evening: Free time for shopping or spa"
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Departure",
+            "activities": [
+              "Leisurely breakfast at the hotel",
+              "Free time for last-minute shopping or beach stroll",
+              "Transfer to airport for departure"
+            ]
+          }
+        ],
+        "included": [
+          "Private airport transfer",
+          "3 nights at a 4-star hotel",
+          "Daily breakfast",
+          "Professional tour guide",
+          "Private air-conditioned transportation",
+          "Entrance fees for all tourist attractions"
+        ],
+        "excluded": [
+          "Flight tickets",
+          "Travel insurance",
+          "Personal expenses",
+          "Lunch"
+        ]
+      }
+    ]
+  },
+  "adventure-culture": {
+    "destination": "Bali",
+    "title": "Adventure & Culture Tours",
+    "packages": [
+      {
+        "id": 1,
+        "slug": "adventure-combo",
+        "name": "Adventure & Culture Combo",
+        "type": "ADVENTURE",
+        "duration": "5 Days 4 Nights",
+        "location": "Kuta / Seminyak",
+        "price": "Rp 6.500.000",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "An adventure and culture package for active travelers.",
+        "highlights": ["Rafting", "Snorkeling", "Cultural tour"],
+        "itinerary": [],
+        "included": [],
+        "excluded": []
+      }
+    ]
+  },
+  "short-escape": {
+    "destination": "Bali",
+    "title": "Short Escape Tours",
+    "packages": [
+      {
+        "id": 1,
+        "slug": "weekend-getaway",
+        "name": "Weekend Getaway Bali",
+        "type": "SHORT ESCAPE",
+        "duration": "3 Days 2 Nights",
+        "location": "Seminyak",
+        "price": "Rp 3.500.000",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+        "overview": "A short weekend getaway in Bali.",
+        "highlights": ["Beach club", "Sunset dinner", "Shopping"],
+        "itinerary": [],
+        "included": [],
+        "excluded": []
+      }
+    ]
+  }
+}

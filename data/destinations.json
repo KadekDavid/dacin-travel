@@ -3,22 +3,24 @@
     "id": "luxury-relaxation",
     "name": "Luxury & Relaxation",
     "slug": "luxury-relaxation",
-    "image": "/assets/images/relax.png",
-    "tours": 3
+    "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
+    "tours": 3,
+    "location": "Bali, Indonesia"
   },
   {
     "id": "adventure-culture",
     "name": "Adventure & Culture",
     "slug": "adventure-culture",
-    "image": "/assets/images/tree-house.webp",
-    "tours": 4
+    "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+    "tours": 4,
+    "location": "Bali, Indonesia"
   },
   {
-    "id": "short-escape",
+    "id": "short-escape", 
     "name": "Short Escape",
     "slug": "short-escape",
-    "image": "/assets/images/ESCAPE.jpg",
-    "tours": 1
+    "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+    "tours": 1,
+    "location": "Bali, Indonesia"
   }
 ]
-

@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080C0F] text-gray-300 pt-10 pb-6 px-4 md:px-8 lg:px-20 mt-16 md:mt-24">
-      <div className="max-w-7xl mx-auto">
+    <footer className="mt-12 bg-[#080C0F] px-4 pb-6 pt-10 text-gray-300 sm:px-6 md:mt-24 md:px-8 lg:px-20">
+      <div className="mx-auto max-w-7xl">
         {/* Baris utama: di mobile jadi kolom, di md ke atas jadi baris */}
-        <div className="flex flex-col md:flex-row justify-between gap-8 pb-6 md:pb-8 border-b border-gray-700">
+        <div className="flex flex-col justify-between gap-8 border-b border-gray-700 pb-6 md:flex-row md:pb-8">
           {/* Bagian kiri: Logo & Alamat - tengah di mobile, kiri di desktop */}
           <div className="text-center md:text-left flex-1">
             <div className="flex justify-center md:justify-start">
               <Image
-                src="/assets/images/logo.png"
+                src="https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png"
                 alt="Logo Dacin Travel"
                 width={70}
                 height={52}
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           {/* Bagian kanan: Menu navigasi - di mobile jadi 2 kolom, di desktop row */}
-          <div className="flex flex-row justify-center gap-8 sm:gap-12 text-center md:text-left">
+          <div className="grid grid-cols-2 gap-6 text-center sm:gap-12 md:flex md:flex-row md:justify-center md:text-left">
             <div>
               <h4 className="font-semibold text-gray-400 mb-2 md:mb-3 text-sm md:text-base">
                 Explore
@@ -118,7 +118,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center text-gray-500 text-[11px] sm:text-xs pt-4 border-t border-gray-800">
           <p>2026 | Dacin Travel</p>
-          <p className="mt-1">Designed and Developed by David</p>
+         {/*  <p className="mt-1">Designed and Developed by David</p> */}
         </div>
       </div>
     </footer>

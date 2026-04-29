@@ -18,30 +18,11 @@ export default function FilterBar({ currentSlug, destinations }: FilterBarProps)
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center", // ← memusatkan horizontal
-        gap: "16px",
-        marginBottom: "40px",
-        flexWrap: "wrap",
-        alignItems: "center",
-      }}
-    >
+    <div className="mb-8 grid w-full grid-cols-1 gap-3 sm:mb-10 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] sm:items-center">
       <select
         value={selectedSlug}
         onChange={(e) => setSelectedSlug(e.target.value)}
-        style={{
-          padding: "12px 20px",
-          borderRadius: "40px",
-          border: "1px solid #e2e8f0",
-          backgroundColor: "white",
-          fontSize: "14px",
-          fontWeight: "500",
-          color: "#1e293b",
-          cursor: "pointer",
-          outline: "none",
-        }}
+        className="min-h-12 w-full rounded-full border border-[#e2e8f0] bg-white px-5 text-sm font-medium text-[#1e293b] outline-none"
       >
         {destinations.map((dest) => (
           <option key={dest.slug} value={dest.slug}>
@@ -53,17 +34,7 @@ export default function FilterBar({ currentSlug, destinations }: FilterBarProps)
       <select
         value={tripType}
         onChange={(e) => setTripType(e.target.value)}
-        style={{
-          padding: "12px 20px",
-          borderRadius: "40px",
-          border: "1px solid #e2e8f0",
-          backgroundColor: "white",
-          fontSize: "14px",
-          fontWeight: "500",
-          color: "#1e293b",
-          cursor: "pointer",
-          outline: "none",
-        }}
+        className="min-h-12 w-full rounded-full border border-[#e2e8f0] bg-white px-5 text-sm font-medium text-[#1e293b] outline-none"
       >
         <option>Semua Jenis Trip</option>
         <option>OPEN TRIP</option>
@@ -72,19 +43,7 @@ export default function FilterBar({ currentSlug, destinations }: FilterBarProps)
 
       <button
         onClick={handleSearch}
-        style={{
-          padding: "12px 28px",
-          borderRadius: "40px",
-          border: "none",
-          backgroundColor: "#ff8a00",
-          color: "white",
-          fontSize: "14px",
-          fontWeight: "bold",
-          cursor: "pointer",
-          transition: "background 0.3s",
-        }}
-        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#ea580c")}
-        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#f97316")}
+        className="min-h-12 w-full rounded-full border-0 bg-[#0046FF] px-7 text-sm font-bold text-white transition-colors hover:bg-[#0036c9] sm:w-auto"
       >
         Cari
       </button>

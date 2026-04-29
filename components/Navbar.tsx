@@ -20,7 +20,6 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Package", href: "/paket-tour" },
     { name: "Articles", href: "/artikel" },
     { name: "About Us", href: "/tentang" },
   ];
@@ -35,12 +34,12 @@ export default function Navbar() {
         }
       `}
     >
-      <div className="max-w-[1280px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
         {/* LOGO */}
         <Link href="/" className="z-10 shrink-0">
           <Image
-            src="/assets/images/logo.png"
-            alt="Pesona Ijen"
+            src="https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png"
+            alt="Dacin Travel Logo"
             width={60}
             height={40}
             priority
@@ -48,6 +47,7 @@ export default function Navbar() {
               transition-all duration-300 w-auto
               ${scrolled ? "h-[34px]" : "h-10"}
             `}
+            style={{ width: "auto" }}
           />
         </Link>
 
@@ -81,8 +81,10 @@ export default function Navbar() {
 
         {/* HAMBURGER BUTTON untuk mobile */}
         <button
-          className="md:hidden z-20 p-2 focus:outline-none"
+          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white/60 md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={mobileMenuOpen}
         >
           <svg className="w-6 h-6 text-[#2b2b2b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileMenuOpen ? (
@@ -96,7 +98,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU - muncul saat hamburger diklik */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#fff3ea] border-t border-black/5 py-4 px-6 flex flex-col gap-4">
+        <div className="flex flex-col gap-2 border-t border-black/5 bg-[#fefbec] px-4 py-4 shadow-lg md:hidden">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -105,9 +107,9 @@ export default function Navbar() {
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`
-                  text-sm font-medium text-[#2b2b2b] no-underline py-2
+                  rounded-xl text-sm font-medium text-[#2b2b2b] no-underline py-3
                   transition-colors duration-200 hover:text-[#0046FF]
-                  ${isActive ? "text-[#0046FF] border-l-4 border-[#0046FF] pl-3" : "pl-4"}
+                  ${isActive ? "bg-[#eef3ff] text-[#0046FF] border-l-4 border-[#0046FF] pl-3" : "pl-4"}
                 `}
               >
                 {item.name}

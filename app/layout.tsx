@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/assets/images/logo.png",  // atau "/favicon.ico"
+    icon: "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png",  // atau "/favicon.ico"
   },
   title: "Dacin Travel",
   description: "Tour & Travel",
