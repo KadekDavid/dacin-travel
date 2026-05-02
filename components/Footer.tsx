@@ -14,16 +14,11 @@ export default function Footer() {
               <Image
                 src="https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png"
                 alt="Logo Dacin Travel"
-                width={70}
+                width={150}
                 height={52}
                 className="object-contain mb-3 md:mb-4"
               />
             </div>
-            <address className="not-italic text-xs md:text-sm text-gray-400 leading-relaxed">
-              JL. Kampial Residen II Blok B No 3, Link Menesa,<br />
-              Kec. Kuta Selatan, Kabupaten Badung,<br />
-              Bali 80361
-            </address>
           </div>
 
           {/* Bagian kanan: Menu navigasi - di mobile jadi 2 kolom, di desktop row */}
