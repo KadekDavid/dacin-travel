@@ -182,7 +182,7 @@
         "duration": "4 Days 3 Nights",
         "location": "Seminyak / Kuta",
         "price": "Rp 4.500.000",
-        "image": "/assets/images/short-escape.webp",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
         "overview": "A short weekend escape package for an unforgettable Bali getaway.",
         "highlights": [
           "Sunset at Uluwatu with Kecak Dance",
@@ -262,11 +262,80 @@
         "location": "Kuta / Seminyak",
         "price": "Rp 6.500.000",
         "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
-        "overview": "An adventure and culture package for active travelers.",
-        "highlights": ["Rafting", "Snorkeling", "Cultural tour"],
-        "itinerary": [],
-        "included": [],
-        "excluded": []
+        "overview": "An active Bali journey that combines water adventure, cultural landmarks, local food stops, and scenic nature routes. This package is designed for travelers who want a balanced mix of movement and discovery.",
+        "highlights": [
+          "White-water rafting experience",
+          "Ubud cultural route",
+          "Temple and rice terrace visit",
+          "Nusa Penida island day",
+          "Sunset dinner experience"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Arrival & Seminyak Area",
+            "activities": [
+              "Airport pickup and transfer to hotel",
+              "Check-in and free time to relax",
+              "Evening dinner around Seminyak or Kuta"
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Ubud Culture & Nature",
+            "activities": [
+              "Visit Ubud Monkey Forest",
+              "Explore Tegallalang Rice Terraces",
+              "Lunch stop in Ubud area",
+              "Visit Tirta Empul Temple"
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Rafting & Local Market",
+            "activities": [
+              "White-water rafting on Ayung River",
+              "Lunch after rafting activity",
+              "Visit Ubud Art Market",
+              "Return to hotel for rest"
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Nusa Penida Day Trip",
+            "activities": [
+              "Morning speedboat to Nusa Penida",
+              "Visit Kelingking Beach and Broken Beach",
+              "Photo stop at Angel's Billabong",
+              "Return to Bali for sunset dinner"
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Departure",
+            "activities": [
+              "Breakfast at hotel",
+              "Free time for last-minute shopping",
+              "Transfer to airport or next destination"
+            ]
+          }
+        ],
+        "included": [
+          "Private airport transfer",
+          "4 nights accommodation",
+          "Daily breakfast",
+          "Private air-conditioned transportation",
+          "Professional tour guide",
+          "Rafting equipment and guide",
+          "Nusa Penida speedboat ticket"
+        ],
+        "excluded": [
+          "Flight tickets",
+          "Travel insurance",
+          "Personal expenses",
+          "Meals outside the itinerary",
+          "Guide/driver tips"
+        ]
       }
     ]
   },
@@ -283,11 +352,59 @@
         "location": "Seminyak",
         "price": "Rp 3.500.000",
         "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
-        "overview": "A short weekend getaway in Bali.",
-        "highlights": ["Beach club", "Sunset dinner", "Shopping"],
-        "itinerary": [],
-        "included": [],
-        "excluded": []
+        "overview": "A compact Bali escape for travelers who want a refreshing short holiday with beach time, sunset moments, easy shopping, and comfortable transfers.",
+        "highlights": [
+          "Relaxed Seminyak stay",
+          "Beach club visit",
+          "Uluwatu sunset route",
+          "Local shopping stop",
+          "Easy airport transfer"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Arrival & Relaxation",
+            "activities": [
+              "Airport pickup and transfer to Seminyak hotel",
+              "Check-in and free time",
+              "Optional dinner around Seminyak"
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Beach & Sunset",
+            "activities": [
+              "Breakfast at hotel",
+              "Beach club or beach leisure time",
+              "Visit Uluwatu Temple",
+              "Sunset dinner experience"
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Shopping & Departure",
+            "activities": [
+              "Breakfast and hotel checkout",
+              "Shopping stop for souvenirs",
+              "Transfer to airport"
+            ]
+          }
+        ],
+        "included": [
+          "Private airport transfer",
+          "2 nights accommodation",
+          "Daily breakfast",
+          "Private air-conditioned transportation",
+          "Driver assistance",
+          "Mineral water during the tour"
+        ],
+        "excluded": [
+          "Flight tickets",
+          "Travel insurance",
+          "Personal expenses",
+          "Entrance tickets unless stated",
+          "Meals outside the itinerary"
+        ]
       }
     ]
   }

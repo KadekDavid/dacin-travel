@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import HomeGallerySlider from "./HomeGallerySlider";
 
 const strengths = [
   {
@@ -81,54 +81,36 @@ export default function HomeExperienceSection() {
           ))}
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="grid items-start gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="overflow-hidden rounded-[28px] bg-white p-3 shadow-[0_24px_70px_rgba(15,23,42,0.08)] sm:p-4">
-            <div className="grid gap-3 sm:grid-cols-3">
-              {gallery.map((item, index) => (
-                <div
-                  key={item.title}
-                  className={`relative min-h-[220px] overflow-hidden rounded-[22px] bg-[#eef3ff] ${
-                    index === 0 ? "sm:col-span-2" : ""
-                  }`}
-                >
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-                  <p className="absolute bottom-4 left-4 right-4 m-0 text-base font-bold text-white">{item.title}</p>
-                </div>
-              ))}
-              <div className="rounded-[22px] border border-[#dbe6ff] bg-[#f8fbff] p-5 sm:col-span-2">
-                <p className="m-0 text-xs font-bold uppercase tracking-wide text-[#0046FF]">Popular Bali moments</p>
-                <h3 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-[#101828]">
-                  Add meaningful stops between your main destinations.
-                </h3>
-                <p className="m-0 mt-3 text-sm leading-relaxed text-[#667085]">
-                  We help arrange the small details that make the day feel complete, from a relaxed lunch stop to sunset timing and easy hotel transfers.
-                </p>
-                <div className="mt-5 grid gap-2 sm:grid-cols-2">
-                  {moments.map((moment) => (
-                    <div key={moment} className="rounded-2xl bg-white px-4 py-3 text-sm font-bold text-[#101828] shadow-[0_12px_30px_rgba(15,23,42,0.05)]">
-                      {moment}
-                    </div>
-                  ))}
-                </div>
+            <HomeGallerySlider slides={gallery.slice(0, 3)} />
+
+            <div className="mt-4 rounded-[22px] border border-[#dbe6ff] bg-[#f8fbff] p-5">
+              <p className="m-0 text-xs font-bold uppercase tracking-wide text-[#0046FF]">Popular Bali moments</p>
+              <h3 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-[#101828]">
+                Add meaningful stops between your main destinations.
+              </h3>
+              <p className="m-0 mt-3 text-sm leading-relaxed text-[#667085]">
+                We help arrange the small details that make the day feel complete, from a relaxed lunch stop to sunset timing and easy hotel transfers.
+              </p>
+              <div className="mt-5 grid gap-2 sm:grid-cols-2">
+                {moments.map((moment) => (
+                  <div key={moment} className="rounded-2xl bg-white px-4 py-3 text-sm font-bold text-[#101828] shadow-[0_12px_30px_rgba(15,23,42,0.05)]">
+                    {moment}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
-          <div className="grid gap-4">
-            <div className="rounded-[28px] bg-[#0046FF] p-6 text-white shadow-[0_24px_70px_rgba(0,70,255,0.2)] sm:p-7">
+          <div className="flex flex-col gap-4 self-start">
+            <div className="flex min-h-[280px] flex-col justify-center rounded-[28px] bg-[#0046FF] p-6 text-white shadow-[0_24px_70px_rgba(0,70,255,0.2)] sm:min-h-[430px] sm:p-7 lg:min-h-[520px] lg:p-10">
               <p className="m-0 text-sm font-bold uppercase tracking-wide text-white/75">Ready for Bali?</p>
               <h3 className="m-0 mt-3 text-2xl font-extrabold leading-tight sm:text-3xl">
                 Choose a package, then shape the details around your group.
               </h3>
               <Link
-                href="#destinations"
+                href="/paket-tour"
                 className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-6 text-sm font-bold text-[#0046FF] no-underline transition hover:-translate-y-0.5 sm:w-fit"
               >
                 View Packages

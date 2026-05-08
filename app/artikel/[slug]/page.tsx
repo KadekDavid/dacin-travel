@@ -119,7 +119,7 @@ export default async function ArticleDetailPage({ params }: ArticleDetailProps) 
             <p className="m-0 text-sm font-bold uppercase tracking-wide text-white/75">Need a ready route?</p>
             <h2 className="m-0 mt-3 text-2xl font-bold leading-tight">Explore Bali packages made for your schedule.</h2>
             <Link
-              href="/"
+              href="/paket-tour"
               className="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-5 text-sm font-bold text-[#0046FF] no-underline transition hover:-translate-y-0.5"
             >
               View Packages

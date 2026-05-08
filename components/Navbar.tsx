@@ -20,8 +20,11 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
+    { name: "Packages", href: "/paket-tour" },
     { name: "Articles", href: "/artikel" },
     { name: "About Us", href: "/tentang" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -52,15 +55,15 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP MENU - hidden di mobile */}
-        <nav className="hidden items-center rounded-full border border-[#dbe6ff] bg-white/70 px-2 py-1 shadow-[0_10px_26px_rgba(15,23,42,0.05)] md:flex">
+        <nav className="hidden items-center rounded-full border border-[#dbe6ff] bg-white/70 px-2 py-1 shadow-[0_10px_26px_rgba(15,23,42,0.05)] lg:flex">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
             return (
               <Link
                 key={item.name}
                 href={item.href}
               className={`
-                relative rounded-full px-4 py-2 text-sm font-semibold text-[#2b2b2b] no-underline
+                relative rounded-full px-3 py-2 text-sm font-semibold text-[#2b2b2b] no-underline
                 transition-colors duration-200 hover:text-[#0046FF]
                 ${isActive ? "bg-[#eef3ff] text-[#0046FF]" : ""}
               `}
@@ -72,11 +75,11 @@ export default function Navbar() {
         </nav>
 
         {/* Spacer kanan (desktop) */}
-        <div className="hidden md:block w-[60px] shrink-0"></div>
+        <div className="hidden w-[60px] shrink-0 lg:block"></div>
 
         {/* HAMBURGER BUTTON untuk mobile */}
         <button
-          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#dbe6ff] bg-white text-[#101828] shadow-[0_10px_26px_rgba(15,23,42,0.07)] md:hidden"
+          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#dbe6ff] bg-white text-[#101828] shadow-[0_10px_26px_rgba(15,23,42,0.07)] lg:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={mobileMenuOpen}
@@ -93,9 +96,9 @@ export default function Navbar() {
 
       {/* MOBILE MENU - muncul saat hamburger diklik */}
       {mobileMenuOpen && (
-        <div className="flex flex-col gap-2 border-t border-[#dbe6ff] bg-white/95 px-4 py-4 shadow-lg backdrop-blur-xl md:hidden">
+        <div className="flex flex-col gap-2 border-t border-[#dbe6ff] bg-white/95 px-4 py-4 shadow-lg backdrop-blur-xl lg:hidden">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
             return (
               <Link
                 key={item.name}

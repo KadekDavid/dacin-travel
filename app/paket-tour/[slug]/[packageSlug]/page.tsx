@@ -1,7 +1,78 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import packagesDetail from "@/data/packages-detail.json";
+import PackageGallerySlider from "@/components/paket-tour/PackageGallerySlider";
+
+type PackageDetailParams = Promise<{ slug: string; packageSlug: string }>;
+
+const fallbackGalleryImages = [
+  "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
+  "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+  "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+  "https://res.cloudinary.com/dh1vnkssv/image/upload/f_auto,q_auto/hero_tllhfl",
+];
+
+const testimonials = [
+  {
+    name: "Family Holiday",
+    type: "Private Bali Trip",
+    quote: "The route was clear, the pickup was on time, and the schedule felt comfortable for the whole family.",
+  },
+  {
+    name: "Group Tour",
+    type: "Custom Package",
+    quote: "Every detail was easy to understand, from inclusions to the daily timing. It made the trip feel smooth.",
+  },
+  {
+    name: "Weekend Escape",
+    type: "Short Stay",
+    quote: "A short trip still felt complete because the destination order and transfer timing were well arranged.",
+  },
+];
+
+const faqItems = [
+  {
+    question: "Can this package be customized?",
+    answer:
+      "Yes. The route, pickup time, hotel area, and several activities can be adjusted based on your group schedule and travel style.",
+  },
+  {
+    question: "Is airport pickup included?",
+    answer:
+      "Most packages include airport or hotel pickup as listed in the included facilities. The final pickup point will be confirmed before the trip.",
+  },
+  {
+    question: "Are meals and entrance tickets included?",
+    answer:
+      "Please check the Included and Excluded sections on this page. We keep these details clear so you can understand what is covered before booking.",
+  },
+  {
+    question: "How do I confirm a booking?",
+    answer:
+      "You can contact the team through the booking button, share your travel date and group size, then confirm the final package details.",
+  },
+];
+
+function getPackageEntry(slug: string, packageSlug: string) {
+  const destination = packagesDetail[slug as keyof typeof packagesDetail];
+  const packageData = destination?.packages.find((pkg) => pkg.slug === packageSlug);
+
+  return { destination, packageData };
+}
+
+function getGalleryImages(packageImage: string) {
+  return [packageImage, ...fallbackGalleryImages.filter((image) => image !== packageImage)].slice(0, 5);
+}
+
+function getNumericPrice(price: string) {
+  return price.replace(/\D/g, "");
+}
+
+function buildPackageDescription(packageData: { name: string; duration: string; location: string; overview: string }) {
+  return `${packageData.name} in ${packageData.location}. ${packageData.duration}. ${packageData.overview}`;
+}
 
 function ItineraryIcon() {
   return (
@@ -110,28 +181,122 @@ export async function generateStaticParams() {
   return params;
 }
 
+export async function generateMetadata({ params }: { params: PackageDetailParams }): Promise<Metadata> {
+  const { slug, packageSlug } = await params;
+  const { packageData } = getPackageEntry(slug, packageSlug);
+
+  if (!packageData) {
+    return {
+      title: "Package Not Found | Dacin Travel",
+    };
+  }
+
+  const description = buildPackageDescription(packageData);
+
+  return {
+    title: `${packageData.name} | Dacin Travel`,
+    description,
+    keywords: [
+      packageData.name,
+      `${packageData.location} Bali tour`,
+      `${packageData.duration} Bali package`,
+      "Bali tour package",
+      "private Bali tour",
+      "Dacin Travel",
+    ],
+    openGraph: {
+      title: `${packageData.name} | Dacin Travel`,
+      description,
+      type: "website",
+      images: [
+        {
+          url: packageData.image,
+          width: 1200,
+          height: 630,
+          alt: packageData.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${packageData.name} | Dacin Travel`,
+      description,
+      images: [packageData.image],
+    },
+  };
+}
+
 export default async function PackageDetailPage({
   params,
 }: {
-  params: { slug: string; packageSlug: string };
+  params: PackageDetailParams;
 }) {
   const { slug, packageSlug } = await params;
-  const destination = packagesDetail[slug as keyof typeof packagesDetail];
+  const { destination, packageData } = getPackageEntry(slug, packageSlug);
 
   if (!destination) notFound();
 
-  const packageData = destination.packages.find((pkg) => pkg.slug === packageSlug);
-
   if (!packageData) notFound();
+
+  const galleryImages = getGalleryImages(packageData.image);
+  const packageDescription = buildPackageDescription(packageData);
+  const packageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name: packageData.name,
+    description: packageDescription,
+    image: galleryImages,
+    touristType: packageData.type,
+    itinerary: packageData.itinerary.map((day) => ({
+      "@type": "ItemList",
+      name: `Day ${day.day}: ${day.title}`,
+      itemListElement: day.activities.map((activity, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: activity,
+      })),
+    })),
+    offers: {
+      "@type": "Offer",
+      price: getNumericPrice(packageData.price),
+      priceCurrency: "IDR",
+      availability: "https://schema.org/InStock",
+    },
+    provider: {
+      "@type": "TravelAgency",
+      name: "Dacin Travel",
+    },
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <main className="overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(packageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="mx-auto w-full max-w-[1280px] px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-10 lg:px-8 lg:pb-20 lg:pt-16">
         {/* Breadcrumb */}
         <div className="mb-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#6b7280] sm:mb-6 sm:text-sm">
           <Link href="/" className="font-semibold text-[#0046FF] no-underline">Home</Link>
-          <Link href={`/paket-tour/${slug}`} className="text-[#6b7280] no-underline">
-          </Link>
+          <span>{">"}</span>
+          <Link href="/paket-tour" className="font-semibold text-[#0046FF] no-underline">Packages</Link>
           <span>{">"}</span>
           <span className="min-w-0 break-words font-medium text-[#1f2937]">{packageData.name}</span>
         </div>
@@ -205,6 +370,25 @@ export default async function PackageDetailPage({
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Package Gallery */}
+        <section className="mb-8 rounded-[22px] bg-white p-3 shadow-[0_30px_80px_rgba(15,23,42,0.08)] sm:mb-12 sm:rounded-[24px] sm:p-5">
+          <div className="mb-5 flex flex-col gap-3 px-1 sm:flex-row sm:items-end sm:justify-between sm:px-2">
+            <div>
+              <span className="mb-3 inline-flex rounded-full bg-[#eef3ff] px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0046FF]">
+                Package Gallery
+              </span>
+              <h2 className="m-0 text-2xl font-extrabold leading-tight text-[#101828] sm:text-[28px]">
+                A closer look at your Bali experience
+              </h2>
+            </div>
+            <p className="m-0 max-w-xl text-sm leading-relaxed text-[#667085]">
+              Preview the kind of beaches, routes, culture, and relaxing moments that can be part of this package.
+            </p>
+          </div>
+
+          <PackageGallerySlider images={galleryImages} packageName={packageData.name} />
         </section>
 
         {/* Highlights */}
@@ -380,6 +564,58 @@ export default async function PackageDetailPage({
               )}
             </div>
           </aside>
+        </section>
+
+        {/* FAQ & Testimonials */}
+        <section className="mt-8 grid gap-6 sm:mt-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(330px,0.95fr)]">
+          <div className="rounded-[22px] bg-white p-4 shadow-[0_30px_80px_rgba(15,23,42,0.08)] sm:rounded-[24px] sm:p-8">
+            <div className="mb-6">
+              <span className="mb-3 inline-flex rounded-full bg-[#eef3ff] px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0046FF]">
+                FAQ
+              </span>
+              <h2 className="m-0 text-2xl font-extrabold leading-tight text-[#101828] sm:text-[28px]">
+                Frequently asked questions
+              </h2>
+            </div>
+
+            <div className="space-y-3">
+              {faqItems.map((item, index) => (
+                <details key={item.question} className="package-detail-accordion rounded-2xl border border-[#dbe6ff] bg-[#f8fbff] p-4" open={index === 0}>
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-bold text-[#101828]">
+                    <span>{item.question}</span>
+                    <ChevronDownIcon />
+                  </summary>
+                  <p className="m-0 mt-3 text-sm leading-relaxed text-[#667085] sm:text-base">{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[22px] bg-white p-4 shadow-[0_30px_80px_rgba(15,23,42,0.08)] sm:rounded-[24px] sm:p-8">
+            <div className="mb-6">
+              <span className="mb-3 inline-flex rounded-full bg-[#eef3ff] px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0046FF]">
+                Testimonials
+              </span>
+              <h2 className="m-0 text-2xl font-extrabold leading-tight text-[#101828] sm:text-[28px]">
+                What travelers appreciate
+              </h2>
+            </div>
+
+            <div className="space-y-4">
+              {testimonials.map((item) => (
+                <article key={item.name} className="rounded-2xl border border-[#dbe6ff] bg-[#f8fbff] p-5">
+                  <p className="m-0 text-base font-semibold leading-relaxed text-[#101828]">&quot;{item.quote}&quot;</p>
+                  <div className="mt-4 flex items-center justify-between gap-3">
+                    <div>
+                      <p className="m-0 text-sm font-extrabold text-[#101828]">{item.name}</p>
+                      <p className="m-0 mt-1 text-xs font-bold uppercase tracking-wide text-[#0046FF]">{item.type}</p>
+                    </div>
+                    <span className="rounded-full bg-[#0046FF] px-3 py-1 text-xs font-bold text-white">5.0</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
         </section>
       </div>
     </main>

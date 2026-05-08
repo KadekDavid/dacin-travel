@@ -25,10 +25,18 @@ export default function Footer() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
-                    href="/"
+                    href="/paket-tour"
                     className="block text-gray-400 transition hover:text-white"
                   >
                     Package
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/gallery"
+                    className="block text-gray-400 transition hover:text-white"
+                  >
+                    Gallery
                   </Link>
                 </li>
                 <li>

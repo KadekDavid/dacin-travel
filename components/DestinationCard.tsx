@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import packagesDetail from "@/data/packages-detail.json";
+import { getPackagesFilterUrl } from "@/lib/package-utils";
 
 interface DestinationCardProps {
   name: string;
@@ -17,13 +17,10 @@ export default function DestinationCard({
   tours,
   imagePath,
 }: DestinationCardProps) {
-  // Ambil paket pertama dari destinasi berdasarkan slug
-  const destination = packagesDetail[slug as keyof typeof packagesDetail];
-  const firstPackageSlug = destination?.packages[0]?.slug;
-  const detailUrl = firstPackageSlug ? `/paket-tour/${slug}/${firstPackageSlug}` : `/paket-tour/${slug}`;
+  const packagesUrl = getPackagesFilterUrl(slug);
 
   return (
-    <Link href={detailUrl} className="card block rounded-[20px] sm:rounded-[24px]">
+    <Link href={packagesUrl} className="card block rounded-[20px] sm:rounded-[24px]">
       <Image
         src={imagePath}
         alt={name}

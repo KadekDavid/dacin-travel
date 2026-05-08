@@ -45,7 +45,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/"
+                href="/paket-tour"
                 className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#0046FF] px-7 text-sm font-bold text-white no-underline sm:w-auto"
               >
                 View Packages

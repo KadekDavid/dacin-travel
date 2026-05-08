@@ -1,5 +1,6 @@
 // components/HeroSection.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -20,12 +21,12 @@ export default function HeroSection() {
               we bring you the ultimate Bali holiday experience.
             </p>
             <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-center lg:justify-start">
-              <a href="#destinations" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#0046FF] px-7 text-sm font-bold text-white no-underline shadow-[0_16px_34px_rgba(0,70,255,0.24)]">
+              <Link href="/paket-tour" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#0046FF] px-7 text-sm font-bold text-white no-underline shadow-[0_16px_34px_rgba(0,70,255,0.24)]">
                 Explore Tours
-              </a>
-              <a href="/tentang" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#dbe6ff] bg-white px-7 text-sm font-bold text-[#0046FF] no-underline">
+              </Link>
+              <Link href="/tentang" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#dbe6ff] bg-white px-7 text-sm font-bold text-[#0046FF] no-underline">
                 About Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

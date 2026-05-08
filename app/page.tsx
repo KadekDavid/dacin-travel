@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import DestinationsSection from "@/components/DestinationsSection";
-import FloatingChatButton from "@/components/FloatingChatButton";
+import HowItWorksSection from "@/components/HowItWorksSection";
 import HomeExperienceSection from "@/components/HomeExperienceSection";
 
 
@@ -9,8 +9,8 @@ export default function Home() {
     <main>
       <HeroSection />
       <DestinationsSection />
+      <HowItWorksSection />
       <HomeExperienceSection />
-      <FloatingChatButton />
     </main>
   );
 }
