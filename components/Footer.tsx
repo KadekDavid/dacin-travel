@@ -4,34 +4,29 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="mt-12 bg-[#080C0F] px-4 pb-6 pt-10 text-gray-300 sm:px-6 md:mt-24 md:px-8 lg:px-20">
+    <footer className="mt-14 bg-[#080C0F] px-4 pb-6 pt-10 text-gray-300 sm:px-6 md:mt-24 md:px-8 lg:px-20">
       <div className="mx-auto max-w-7xl">
-        {/* Baris utama: di mobile jadi kolom, di md ke atas jadi baris */}
-        <div className="flex flex-col justify-between gap-8 border-b border-gray-700 pb-6 md:flex-row md:pb-8">
-          {/* Bagian kiri: Logo & Alamat - tengah di mobile, kiri di desktop */}
-          <div className="text-center md:text-left flex-1">
-            <div className="flex justify-center md:justify-start">
-              <Image
-                src="https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png"
-                alt="Logo Dacin Travel"
-                width={150}
-                height={52}
-                className="object-contain mb-3 md:mb-4"
-              />
-            </div>
-          </div>
+        <div className="flex flex-col items-center justify-between gap-8 border-b border-white/10 pb-8 lg:flex-row">
+          <Link href="/" className="inline-flex items-center justify-center">
+            <Image
+              src="https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png"
+              alt="Logo Dacin Travel"
+              width={150}
+              height={52}
+              className="h-auto w-[150px] object-contain"
+            />
+          </Link>
 
-          {/* Bagian kanan: Menu navigasi - di mobile jadi 2 kolom, di desktop row */}
-          <div className="grid grid-cols-2 gap-6 text-center sm:gap-12 md:flex md:flex-row md:justify-center md:text-left">
+          <div className="grid w-full max-w-xl grid-cols-2 gap-6 text-center sm:gap-10 lg:w-auto lg:text-left">
             <div>
-              <h4 className="font-semibold text-gray-400 mb-2 md:mb-3 text-sm md:text-base">
+              <h4 className="mb-3 text-sm font-bold text-white">
                 Explore
               </h4>
-              <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm">
+              <ul className="space-y-2 text-sm">
                 <li>
                   <Link
                     href="/"
-                    className="text-gray-400 hover:text-blue-600 transition block"
+                    className="block text-gray-400 transition hover:text-white"
                   >
                     Package
                   </Link>
@@ -39,7 +34,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/artikel"
-                    className="text-gray-400 hover:text-blue-600 transition block"
+                    className="block text-gray-400 transition hover:text-white"
                   >
                     Article
                   </Link>
@@ -47,7 +42,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/tentang"
-                    className="text-gray-400 hover:text-blue-600 transition block"
+                    className="block text-gray-400 transition hover:text-white"
                   >
                     About Us
                   </Link>
@@ -55,14 +50,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-400 mb-2 md:mb-3 text-sm md:text-base">
+              <h4 className="mb-3 text-sm font-bold text-white">
                 Help
               </h4>
-              <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm">
+              <ul className="space-y-2 text-sm">
                 <li>
                   <Link
                     href="/faq"
-                    className="text-gray-400 hover:text-blue-600 transition block"
+                    className="block text-gray-400 transition hover:text-white"
                   >
                     FAQ
                   </Link>
@@ -70,7 +65,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contact"
-                    className="text-gray-400 hover:text-blue-600 transition block"
+                    className="block text-gray-400 transition hover:text-white"
                   >
                     Contact
                   </Link>
@@ -78,7 +73,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/terms"
-                    className="text-gray-400 hover:text-blue-600 transition block"
+                    className="block text-gray-400 transition hover:text-white"
                   >
                     Terms & Conditions
                   </Link>
@@ -88,32 +83,29 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Baris sosial media - lebih responsif */}
-        <div className="flex justify-center gap-4 sm:gap-6 py-5 md:py-6 flex-wrap">
+        <div className="flex flex-wrap justify-center gap-3 py-6">
           <a
             href="#"
-            className="text-gray-400 hover:text-blue-600 transition text-xs sm:text-sm"
+            className="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-gray-400 transition hover:border-[#0046FF] hover:text-white sm:text-sm"
           >
             Tiktok
           </a>
           <a
             href="https://wa.me/6281337373852"
-            className="text-gray-400 hover:text-blue-600 transition text-xs sm:text-sm"
+            className="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-gray-400 transition hover:border-[#0046FF] hover:text-white sm:text-sm"
           >
             WhatsApp
           </a>
           <a
             href="#"
-            className="text-gray-400 hover:text-blue-600 transition text-xs sm:text-sm"
+            className="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-gray-400 transition hover:border-[#0046FF] hover:text-white sm:text-sm"
           >
             Instagram
           </a>
         </div>
 
-        {/* Copyright */}
-        <div className="text-center text-gray-500 text-[11px] sm:text-xs pt-4 border-t border-gray-800">
-          <p>2026 | Dacin Travel</p>
-         {/*  <p className="mt-1">Designed and Developed by David</p> */}
+        <div className="border-t border-white/10 pt-5 text-center text-[11px] text-gray-500 sm:text-xs">
+          <p className="m-0">2026 | Dacin Travel</p>
         </div>
       </div>
     </footer>

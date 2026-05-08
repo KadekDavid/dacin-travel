@@ -27,14 +27,14 @@ export default function Navbar() {
   return (
     <header
       className={`
-        sticky top-0 z-[1000] transition-all duration-300
+        sticky top-0 z-[1000] border-b transition-all duration-300
         ${scrolled 
-          ? "bg-[#fefbec]/95 shadow-md" 
-          : "bg-[#fefbec] border-b border-black/5"
+          ? "border-[#dbe6ff] bg-white/90 shadow-[0_14px_34px_rgba(15,23,42,0.08)] backdrop-blur-xl" 
+          : "border-black/5 bg-white/75 backdrop-blur-xl"
         }
       `}
     >
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* LOGO */}
         <Link href="/" className="z-10 shrink-0">
           <Image
@@ -52,7 +52,7 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP MENU - hidden di mobile */}
-        <nav className="hidden md:flex items-center mx-auto">
+        <nav className="hidden items-center rounded-full border border-[#dbe6ff] bg-white/70 px-2 py-1 shadow-[0_10px_26px_rgba(15,23,42,0.05)] md:flex">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -60,14 +60,9 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
               className={`
-                relative text-sm font-medium text-[#2b2b2b] no-underline pb-2
+                relative rounded-full px-4 py-2 text-sm font-semibold text-[#2b2b2b] no-underline
                 transition-colors duration-200 hover:text-[#0046FF]
-                before:content-[''] before:absolute before:left-1/2 before:bottom-0
-                before:w-0 before:h-[2px] before:bg-[#0046FF] before:-translate-x-1/2
-                before:transition-all before:duration-300
-                hover:before:w-full
-                mx-4
-                ${isActive ? "before:w-full" : ""}
+                ${isActive ? "bg-[#eef3ff] text-[#0046FF]" : ""}
               `}
               >
                 {item.name}
@@ -81,7 +76,7 @@ export default function Navbar() {
 
         {/* HAMBURGER BUTTON untuk mobile */}
         <button
-          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white/60 md:hidden"
+          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#dbe6ff] bg-white text-[#101828] shadow-[0_10px_26px_rgba(15,23,42,0.07)] md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={mobileMenuOpen}
@@ -98,7 +93,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU - muncul saat hamburger diklik */}
       {mobileMenuOpen && (
-        <div className="flex flex-col gap-2 border-t border-black/5 bg-[#fefbec] px-4 py-4 shadow-lg md:hidden">
+        <div className="flex flex-col gap-2 border-t border-[#dbe6ff] bg-white/95 px-4 py-4 shadow-lg backdrop-blur-xl md:hidden">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (

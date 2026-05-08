@@ -34,7 +34,7 @@ export default function DestinationCard({
       <div className="overlay">
         <span>{location}</span>
         <h3>{name}</h3>
-        <p>{tours} Paket Tour</p>
+        <p>{tours} tour packages</p>
       </div>
     </Link>
   );

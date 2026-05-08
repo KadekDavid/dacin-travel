@@ -148,13 +148,10 @@ export default async function PackageDetailPage({
                 sizes="(min-width: 1024px) 58vw, 100vw"
                 className="object-cover"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/35 to-transparent p-5 sm:p-7">
-               {/* <span className="mb-3 inline-flex rounded-full bg-[#0046FF] px-4 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-[0_10px_24px_rgba(0,70,255,0.35)]">
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent p-5 sm:p-7">
+                <span className="inline-flex rounded-full bg-white/90 px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0046FF] shadow-[0_10px_24px_rgba(15,23,42,0.18)]">
                   {packageData.type}
-                </span>*/}
-               {/* <p className="m-0 max-w-xl text-sm font-semibold text-white/90 sm:text-base">
-                  Curated {destination.destination} travel experience
-                </p>*/}
+                </span>
               </div>
             </div>
 
@@ -216,7 +213,7 @@ export default async function PackageDetailPage({
             <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-3">
                 <HighlightsIcon />
-                <h2 className="text-2xl font-bold text-[#737373] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
+                <h2 className="text-2xl font-extrabold text-[#101828] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
                   Highlights
                 </h2>
               </div>
@@ -267,7 +264,7 @@ export default async function PackageDetailPage({
           <div className="min-w-0 rounded-[22px] bg-white p-4 shadow-[0_30px_80px_rgba(15,23,42,0.08)] sm:rounded-[24px] sm:p-8">
             <div className="mb-5 flex items-center gap-3 sm:mb-7">
               <ItineraryIcon />
-              <h2 className="text-2xl font-bold text-[#737373] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
+              <h2 className="text-2xl font-extrabold text-[#101828] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
                 Itinerary
               </h2>
             </div>
@@ -322,7 +319,7 @@ export default async function PackageDetailPage({
             <div className="rounded-[22px] bg-white p-4 shadow-[0_30px_80px_rgba(15,23,42,0.08)] sm:rounded-[24px] sm:p-7">
               <div className="mb-5 flex items-center gap-3 sm:mb-7">
                 <PriceIcon />
-                <h2 className="text-2xl font-bold text-[#737373] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
+                <h2 className="text-2xl font-extrabold text-[#101828] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
                   Pricing
                 </h2>
               </div>
@@ -351,7 +348,7 @@ export default async function PackageDetailPage({
             <div className="rounded-[22px] bg-white p-4 shadow-[0_30px_80px_rgba(15,23,42,0.08)] sm:rounded-[24px] sm:p-7">
               <div className="mb-5 flex items-center gap-3 sm:mb-7">
                 <FacilityIcon />
-                <h2 className="text-2xl font-bold text-[#737373] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
+                <h2 className="text-2xl font-extrabold text-[#101828] sm:text-[28px]" style={{ fontFamily: "inherit" }}>
                   Facilities
                 </h2>
               </div>
