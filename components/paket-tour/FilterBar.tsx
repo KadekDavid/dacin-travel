@@ -11,18 +11,18 @@ interface FilterBarProps {
 export default function FilterBar({ currentSlug, destinations }: FilterBarProps) {
   const router = useRouter();
   const [selectedSlug, setSelectedSlug] = useState(currentSlug);
-  const [tripType, setTripType] = useState("Semua Jenis Trip");
+  const [tripType, setTripType] = useState("All Trip Types");
 
   const handleSearch = () => {
     router.push(`/paket-tour/${selectedSlug}`);
   };
 
   return (
-    <div className="mb-8 grid w-full grid-cols-1 gap-3 sm:mb-10 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] sm:items-center">
+    <div className="ui-card mb-8 grid w-full grid-cols-1 gap-3 p-3 sm:mb-10 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] sm:items-center">
       <select
         value={selectedSlug}
         onChange={(e) => setSelectedSlug(e.target.value)}
-        className="min-h-12 w-full rounded-full border border-[#e2e8f0] bg-white px-5 text-sm font-medium text-[#1e293b] outline-none"
+        className="ui-input w-full"
       >
         {destinations.map((dest) => (
           <option key={dest.slug} value={dest.slug}>
@@ -34,18 +34,18 @@ export default function FilterBar({ currentSlug, destinations }: FilterBarProps)
       <select
         value={tripType}
         onChange={(e) => setTripType(e.target.value)}
-        className="min-h-12 w-full rounded-full border border-[#e2e8f0] bg-white px-5 text-sm font-medium text-[#1e293b] outline-none"
+        className="ui-input w-full"
       >
-        <option>Semua Jenis Trip</option>
+        <option>All Trip Types</option>
         <option>OPEN TRIP</option>
         <option>PRIVATE TRIP</option>
       </select>
 
       <button
         onClick={handleSearch}
-        className="min-h-12 w-full rounded-full border-0 bg-[#0046FF] px-7 text-sm font-bold text-white transition-colors hover:bg-[#0036c9] sm:w-auto"
+        className="ui-btn ui-btn-primary w-full sm:w-auto"
       >
-        Cari
+        Search
       </button>
     </div>
   );

@@ -43,7 +43,7 @@ function ExpandIcon() {
   return (
     <svg
       aria-hidden="true"
-      className="faq-chevron h-5 w-5 shrink-0 text-[#0046FF] transition-transform duration-200"
+      className="faq-chevron h-5 w-5 shrink-0 text-blue-700 transition-transform duration-200"
       viewBox="0 0 20 20"
       fill="none"
     >
@@ -70,41 +70,41 @@ export default function FAQPage() {
       `}</style>
       <section className="mx-auto max-w-5xl px-4 pb-16 pt-8 sm:px-6 sm:pt-12 lg:px-8 lg:pt-16">
         <div className="mb-8 text-center">
-          <span className="mb-4 inline-flex rounded-full bg-[#eef3ff] px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0046FF]">
+          <span className="ui-eyebrow mb-4">
             Help Center
           </span>
-          <h1 className="m-0 text-3xl font-extrabold leading-tight text-[#101828] sm:text-5xl">
+          <h1 className="m-0 text-3xl font-extrabold leading-tight text-slate-950 sm:text-5xl">
             Frequently asked questions
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[#667085] sm:text-base">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
             Quick answers about booking, customization, package inclusions, and how your Bali tour is arranged.
           </p>
         </div>
 
-        <div className="rounded-[28px] bg-white p-4 shadow-[0_28px_80px_rgba(15,23,42,0.08)] sm:p-6">
+        <div className="ui-card p-4 sm:p-6">
           <div className="space-y-3">
             {faqs.map((item, index) => (
-              <details key={item.question} className="faq-item rounded-2xl border border-[#dbe6ff] bg-[#f8fbff] p-5" open={index === 0}>
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-bold text-[#101828] sm:text-lg">
+              <details key={item.question} className="faq-item rounded-lg border border-slate-200 bg-slate-50 p-5" open={index === 0}>
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-bold text-slate-950 sm:text-lg">
                   <span>{item.question}</span>
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef3ff]">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-slate-200 bg-white">
                     <ExpandIcon />
                   </span>
                 </summary>
-                <p className="m-0 mt-3 text-sm leading-relaxed text-[#667085] sm:text-base">{item.answer}</p>
+                <p className="m-0 mt-3 text-sm leading-7 text-slate-600 sm:text-base">{item.answer}</p>
               </details>
             ))}
           </div>
         </div>
 
-        <div className="mt-8 rounded-[28px] bg-[#0046FF] p-6 text-center text-white shadow-[0_24px_70px_rgba(0,70,255,0.2)] sm:p-8">
+        <div className="mt-8 rounded-lg border border-blue-900/20 bg-blue-800 p-6 text-center text-white shadow-sm sm:p-8">
           <h2 className="m-0 text-2xl font-extrabold">Still have questions?</h2>
-          <p className="mx-auto mt-3 max-w-4xl text-sm leading-relaxed text-white/80 sm:text-base">
+          <p className="mx-auto mt-3 max-w-4xl text-sm leading-7 text-white/80 sm:text-base">
             Send us your travel date and group size. We will help you choose the package that fits best.
           </p>
           <Link
             href="/contact"
-            className="mt-5 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-7 text-sm font-bold text-[#0046FF] no-underline"
+            className="ui-btn mt-5 border-white bg-white text-blue-700 hover:bg-slate-50"
           >
             Contact Us
           </Link>

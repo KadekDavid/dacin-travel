@@ -32,19 +32,19 @@ export default function ContactPage() {
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 sm:pt-12 lg:px-8 lg:pt-16">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
-            <span className="mb-4 inline-flex rounded-full bg-[#eef3ff] px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0046FF]">
+            <span className="ui-eyebrow mb-4">
               Contact
             </span>
-            <h1 className="m-0 text-3xl font-extrabold leading-tight text-[#101828] sm:text-5xl">
+            <h1 className="m-0 text-3xl font-extrabold leading-tight text-slate-950 sm:text-5xl">
               Plan your Bali tour with clear support
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[#667085] sm:text-base">
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
               Tell us your travel date, group size, preferred area, and the package you like. We will help check availability and arrange the next steps.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
                 href="https://wa.me/6281337373852?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20Bali%20tour%20packages."
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#0046FF] px-7 text-sm font-bold text-white no-underline shadow-[0_16px_34px_rgba(0,70,255,0.24)]"
+                className="ui-btn ui-btn-primary"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -52,32 +52,32 @@ export default function ContactPage() {
               </a>
               <Link
                 href="/faq"
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#dbe6ff] bg-white px-7 text-sm font-bold text-[#0046FF] no-underline"
+                className="ui-btn ui-btn-secondary"
               >
                 Read FAQ
               </Link>
             </div>
           </div>
 
-          <div className="rounded-[30px] bg-white p-5 shadow-[0_28px_80px_rgba(15,23,42,0.08)] sm:p-7">
+          <div className="ui-card p-5 sm:p-7">
             <div className="grid gap-4">
               {contactMethods.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="rounded-[22px] border border-[#dbe6ff] bg-[#f8fbff] p-5 no-underline transition hover:border-[#0046FF]"
+                  className="rounded-lg border border-slate-200 bg-slate-50 p-5 no-underline transition hover:border-slate-300 hover:bg-white"
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noreferrer" : undefined}
                 >
-                  <p className="m-0 text-xs font-bold uppercase tracking-wide text-[#0046FF]">{item.label}</p>
-                  <p className="m-0 mt-2 text-lg font-extrabold text-[#101828]">{item.value}</p>
+                  <p className="m-0 text-xs font-bold uppercase tracking-wide text-blue-700">{item.label}</p>
+                  <p className="m-0 mt-2 text-lg font-extrabold text-slate-950">{item.value}</p>
                 </a>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="mt-10 rounded-[30px] bg-[#0046FF] p-6 text-white shadow-[0_24px_70px_rgba(0,70,255,0.2)] sm:p-8">
+        <div className="mt-10 rounded-lg border border-blue-900/20 bg-blue-800 p-6 text-white shadow-sm sm:p-8">
           <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
               <p className="m-0 text-sm font-bold uppercase tracking-wide text-white/75">Booking Flow</p>
@@ -85,7 +85,7 @@ export default function ContactPage() {
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               {planningSteps.map((step, index) => (
-                <div key={step} className="rounded-2xl bg-white/10 p-4">
+                <div key={step} className="rounded-md border border-white/15 bg-white/10 p-4">
                   <span className="text-xs font-bold text-white/70">Step {index + 1}</span>
                   <p className="m-0 mt-1 text-sm font-bold">{step}</p>
                 </div>

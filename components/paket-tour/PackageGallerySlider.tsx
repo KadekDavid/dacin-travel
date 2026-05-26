@@ -36,7 +36,7 @@ export default function PackageGallerySlider({ images, packageName }: PackageGal
   }
 
   return (
-    <div className="relative overflow-hidden rounded-[22px] bg-[#eef3ff]">
+    <div className="relative overflow-hidden rounded-lg bg-slate-50">
       <div className="relative h-[300px] w-full sm:h-[460px] lg:h-[560px]">
         {images.map((image, index) => (
           <Image
@@ -56,7 +56,7 @@ export default function PackageGallerySlider({ images, packageName }: PackageGal
 
       <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-4 sm:bottom-5 sm:left-5 sm:right-5 sm:flex-row sm:items-end sm:justify-between">
         <div className="max-w-xl">
-          <span className="inline-flex rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-[#0046FF] shadow-[0_10px_24px_rgba(15,23,42,0.15)]">
+          <span className="inline-flex rounded-lg bg-white/95 px-3 py-1.5 text-xs font-bold text-blue-700 shadow-sm">
             Moment {activeIndex + 1} of {images.length}
           </span>
           <h3 className="m-0 mt-3 text-2xl font-extrabold leading-tight text-white sm:text-4xl">
@@ -68,7 +68,7 @@ export default function PackageGallerySlider({ images, packageName }: PackageGal
           <button
             type="button"
             onClick={goToPrevious}
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-[#0046FF] shadow-[0_12px_26px_rgba(15,23,42,0.18)] transition hover:-translate-y-0.5"
+            className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/95 text-blue-700 shadow-sm transition hover:-translate-y-0.5"
             aria-label="Previous gallery image"
           >
             <ArrowIcon direction="left" />
@@ -76,7 +76,7 @@ export default function PackageGallerySlider({ images, packageName }: PackageGal
           <button
             type="button"
             onClick={goToNext}
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-[#0046FF] shadow-[0_12px_26px_rgba(15,23,42,0.18)] transition hover:-translate-y-0.5"
+            className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/95 text-blue-700 shadow-sm transition hover:-translate-y-0.5"
             aria-label="Next gallery image"
           >
             <ArrowIcon direction="right" />
@@ -90,11 +90,15 @@ export default function PackageGallerySlider({ images, packageName }: PackageGal
             key={`${image}-dot-${index}`}
             type="button"
             onClick={() => setActiveIndex(index)}
-            className={`h-1.5 flex-1 rounded-full transition ${
-              activeIndex === index ? "bg-white" : "bg-white/35 hover:bg-white/65"
-            }`}
+            className="flex h-10 flex-1 items-center rounded-md focus:outline-none focus:ring-4 focus:ring-white/20"
             aria-label={`Show gallery image ${index + 1}`}
-          />
+          >
+            <span
+              className={`h-1.5 w-full rounded-lg transition ${
+                activeIndex === index ? "bg-white" : "bg-white/35 hover:bg-white/65"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </div>

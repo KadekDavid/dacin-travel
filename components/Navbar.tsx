@@ -32,13 +32,13 @@ export default function Navbar() {
       className={`
         sticky top-0 z-[1000] border-b transition-all duration-300
         ${scrolled 
-          ? "border-[#dbe6ff] bg-white/90 shadow-[0_14px_34px_rgba(15,23,42,0.08)] backdrop-blur-xl" 
-          : "border-black/5 bg-white/75 backdrop-blur-xl"
+          ? "border-slate-200 bg-white/95 shadow-sm backdrop-blur-xl"
+          : "border-slate-200/70 bg-white/90 backdrop-blur-xl"
         }
       `}
     >
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        {/* LOGO */}
+        {/* Brand */}
         <Link href="/" className="z-10 shrink-0">
           <Image
             src="https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png"
@@ -54,19 +54,21 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* DESKTOP MENU - hidden di mobile */}
-        <nav className="hidden items-center rounded-full border border-[#dbe6ff] bg-white/70 px-2 py-1 shadow-[0_10px_26px_rgba(15,23,42,0.05)] lg:flex">
+        {/* Desktop navigation */}
+        <nav className="hidden items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 p-1 shadow-sm lg:flex">
           {navItems.map((item) => {
             const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
             return (
               <Link
                 key={item.name}
                 href={item.href}
-              className={`
-                relative rounded-full px-3 py-2 text-sm font-semibold text-[#2b2b2b] no-underline
-                transition-colors duration-200 hover:text-[#0046FF]
-                ${isActive ? "bg-[#eef3ff] text-[#0046FF]" : ""}
-              `}
+                className={`
+                  relative rounded-md px-3 py-2 text-sm font-semibold no-underline transition
+                  ${isActive
+                    ? "bg-white text-blue-700 shadow-sm"
+                    : "text-slate-600 hover:bg-white hover:text-slate-950"
+                  }
+                `}
               >
                 {item.name}
               </Link>
@@ -74,17 +76,17 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Spacer kanan (desktop) */}
+        {/* Desktop balance spacer */}
         <div className="hidden w-[60px] shrink-0 lg:block"></div>
 
-        {/* HAMBURGER BUTTON untuk mobile */}
+        {/* Mobile menu trigger */}
         <button
-          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#dbe6ff] bg-white text-[#101828] shadow-[0_10px_26px_rgba(15,23,42,0.07)] lg:hidden"
+          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-md border border-slate-300 bg-white text-slate-950 shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-300/40 lg:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={mobileMenuOpen}
         >
-          <svg className="w-6 h-6 text-[#2b2b2b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="h-6 w-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -94,9 +96,9 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* MOBILE MENU - muncul saat hamburger diklik */}
+      {/* Mobile navigation panel */}
       {mobileMenuOpen && (
-        <div className="flex flex-col gap-2 border-t border-[#dbe6ff] bg-white/95 px-4 py-4 shadow-lg backdrop-blur-xl lg:hidden">
+        <div className="flex flex-col gap-2 border-t border-slate-200 bg-white/95 px-4 py-4 shadow-sm backdrop-blur-xl lg:hidden">
           {navItems.map((item) => {
             const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
             return (
@@ -105,9 +107,8 @@ export default function Navbar() {
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`
-                  rounded-xl text-sm font-medium text-[#2b2b2b] no-underline py-3
-                  transition-colors duration-200 hover:text-[#0046FF]
-                  ${isActive ? "bg-[#eef3ff] text-[#0046FF] border-l-4 border-[#0046FF] pl-3" : "pl-4"}
+                  rounded-md px-4 py-3 text-sm font-semibold no-underline transition
+                  ${isActive ? "border-l-4 border-blue-700 bg-slate-50 text-blue-700" : "text-slate-700 hover:bg-slate-50 hover:text-slate-950"}
                 `}
               >
                 {item.name}

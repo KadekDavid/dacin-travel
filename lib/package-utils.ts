@@ -1,3 +1,10 @@
+export type PackageRate = {
+  vehicle: string;
+  pax: string;
+  sellingPrice: number;
+  unit: string;
+};
+
 export type RawPackage = {
   id: number;
   slug: string;
@@ -14,6 +21,7 @@ export type RawPackage = {
     title: string;
     activities: string[];
   }>;
+  pricing: PackageRate[];
   included: string[];
   excluded: string[];
 };
@@ -41,15 +49,15 @@ export type PackageSummary = {
 };
 
 const fallbackImages = {
-  "SHORT ESCAPE": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+  "DAY TOUR": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
   ADVENTURE: "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
-  LUXURY: "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
+  FAMILY: "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
 };
 
 const packageTypesByDestinationSlug: Record<string, string> = {
-  "luxury-relaxation": "LUXURY",
-  "adventure-culture": "ADVENTURE",
-  "short-escape": "SHORT ESCAPE",
+  "bali-day-tours": "DAY TOUR",
+  "adventure-tours": "ADVENTURE",
+  "family-tours": "FAMILY",
 };
 
 export function getPackageImage(image: string, type: string) {

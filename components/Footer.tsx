@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="mt-14 bg-[#080C0F] px-4 pb-6 pt-10 text-gray-300 sm:px-6 md:mt-24 md:px-8 lg:px-20">
+    <footer className="mt-14 border-t border-slate-800 bg-slate-950 px-4 pb-6 pt-10 text-slate-300 sm:px-6 md:mt-24 md:px-8 lg:px-20">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center justify-between gap-8 border-b border-white/10 pb-8 lg:flex-row">
           <Link href="/" className="inline-flex items-center justify-center">
@@ -26,7 +26,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/paket-tour"
-                    className="block text-gray-400 transition hover:text-white"
+                    className="block text-slate-400 transition hover:text-white"
                   >
                     Package
                   </Link>
@@ -34,7 +34,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/gallery"
-                    className="block text-gray-400 transition hover:text-white"
+                    className="block text-slate-400 transition hover:text-white"
                   >
                     Gallery
                   </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/artikel"
-                    className="block text-gray-400 transition hover:text-white"
+                    className="block text-slate-400 transition hover:text-white"
                   >
                     Article
                   </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/tentang"
-                    className="block text-gray-400 transition hover:text-white"
+                    className="block text-slate-400 transition hover:text-white"
                   >
                     About Us
                   </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/faq"
-                    className="block text-gray-400 transition hover:text-white"
+                    className="block text-slate-400 transition hover:text-white"
                   >
                     FAQ
                   </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contact"
-                    className="block text-gray-400 transition hover:text-white"
+                    className="block text-slate-400 transition hover:text-white"
                   >
                     Contact
                   </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/terms"
-                    className="block text-gray-400 transition hover:text-white"
+                    className="block text-slate-400 transition hover:text-white"
                   >
                     Terms & Conditions
                   </Link>
@@ -94,25 +94,25 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-3 py-6">
           <a
             href="#"
-            className="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-gray-400 transition hover:border-[#0046FF] hover:text-white sm:text-sm"
+            className="inline-flex min-h-10 items-center rounded-md border border-white/10 px-4 text-xs font-semibold text-slate-400 transition hover:border-blue-500 hover:text-white sm:text-sm"
           >
             Tiktok
           </a>
           <a
             href="https://wa.me/6281337373852"
-            className="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-gray-400 transition hover:border-[#0046FF] hover:text-white sm:text-sm"
+            className="inline-flex min-h-10 items-center rounded-md border border-white/10 px-4 text-xs font-semibold text-slate-400 transition hover:border-blue-500 hover:text-white sm:text-sm"
           >
             WhatsApp
           </a>
           <a
             href="#"
-            className="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-gray-400 transition hover:border-[#0046FF] hover:text-white sm:text-sm"
+            className="inline-flex min-h-10 items-center rounded-md border border-white/10 px-4 text-xs font-semibold text-slate-400 transition hover:border-blue-500 hover:text-white sm:text-sm"
           >
             Instagram
           </a>
         </div>
 
-        <div className="border-t border-white/10 pt-5 text-center text-[11px] text-gray-500 sm:text-xs">
+        <div className="border-t border-white/10 pt-5 text-center text-[11px] text-slate-500 sm:text-xs">
           <p className="m-0">2026 | Dacin Travel</p>
         </div>
       </div>

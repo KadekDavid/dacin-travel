@@ -20,7 +20,7 @@ export default function DestinationCard({
   const packagesUrl = getPackagesFilterUrl(slug);
 
   return (
-    <Link href={packagesUrl} className="card block rounded-[20px] sm:rounded-[24px]">
+    <Link href={packagesUrl} className="card block rounded-lg">
       <Image
         src={imagePath}
         alt={name}

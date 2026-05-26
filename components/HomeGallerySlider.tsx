@@ -41,7 +41,7 @@ export default function HomeGallerySlider({ slides }: HomeGallerySliderProps) {
 
   return (
     <div>
-      <div className="relative h-[280px] overflow-hidden rounded-[24px] bg-[#eef3ff] sm:h-[430px] lg:h-[520px]">
+      <div className="relative h-[280px] overflow-hidden rounded-lg bg-slate-100 sm:h-[430px] lg:h-[520px]">
         {slides.map((slide, index) => (
           <Image
             key={slide.title}
@@ -65,7 +65,7 @@ export default function HomeGallerySlider({ slides }: HomeGallerySliderProps) {
         <button
           type="button"
           onClick={goToPrevious}
-          className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-[#0046FF] shadow-[0_12px_26px_rgba(15,23,42,0.18)] transition hover:-translate-y-[calc(50%+2px)] sm:left-5"
+          className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-md border border-slate-200 bg-white/95 text-blue-700 shadow-sm transition hover:bg-slate-50 sm:left-5"
           aria-label="Previous image"
         >
           <ArrowIcon direction="left" />
@@ -73,7 +73,7 @@ export default function HomeGallerySlider({ slides }: HomeGallerySliderProps) {
         <button
           type="button"
           onClick={goToNext}
-          className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-[#0046FF] shadow-[0_12px_26px_rgba(15,23,42,0.18)] transition hover:-translate-y-[calc(50%+2px)] sm:right-5"
+          className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-md border border-slate-200 bg-white/95 text-blue-700 shadow-sm transition hover:bg-slate-50 sm:right-5"
           aria-label="Next image"
         >
           <ArrowIcon direction="right" />
@@ -86,11 +86,15 @@ export default function HomeGallerySlider({ slides }: HomeGallerySliderProps) {
             key={`${slide.title}-dot`}
             type="button"
             onClick={() => setActiveIndex(index)}
-            className={`h-2.5 rounded-full transition-all ${
-              activeIndex === index ? "w-8 bg-[#0046FF]" : "w-2.5 bg-[#cbd8ff] hover:bg-[#7fa0ff]"
-            }`}
+            className="flex h-10 w-10 items-center justify-center rounded-md transition hover:bg-slate-100 focus:outline-none focus:ring-4 focus:ring-blue-700/10"
             aria-label={`Show ${slide.title}`}
-          />
+          >
+            <span
+              className={`h-2.5 rounded-lg transition-all ${
+                activeIndex === index ? "w-8 bg-blue-700" : "w-2.5 bg-slate-300"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </div>

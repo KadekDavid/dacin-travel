@@ -1,409 +1,2387 @@
 {
-  "luxury-relaxation": {
+  "bali-day-tours": {
     "destination": "Bali",
-    "title": "Customized Bali Tours for Your Perfect Holiday!",
+    "title": "Bali Day Tours",
     "packages": [
       {
         "id": 1,
-        "slug": "premium-luxury-relaxation",
-        "name": "The Premium Package - Luxury Relaxation",
-        "type": "LUXURY",
-        "duration": "6 Days 5 Nights",
-        "location": "Nusa Dua",
-        "price": "Rp 8.500.000",
+        "slug": "bedugul-tour",
+        "name": "Bedugul Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "Bedugul",
+        "price": "Rp 170.000 / pax",
         "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
-        "overview": "Enjoy the luxury of Bali with a stay at a 5-star resort in Nusa Dua. This package is designed for travelers who want to relax and experience Bali's beauty in premium style.",
+        "overview": "Explore Bedugul with a private Bali route starting around 8 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
         "highlights": [
-          "Private airport transfer",
-          "Morning yoga by the beach",
-          "Half-day Balinese spa ritual",
-          "Fine dining dinner",
-          "Luxury catamaran cruise"
+          "Wanagiri Hidden Hill",
+          "Handara Gate",
+          "Beratan Lake Temple",
+          "Taman Ayun Temple"
         ],
         "itinerary": [
           {
             "day": 1,
-            "title": "Arrival",
+            "title": "Bedugul Tour - Pickup 8 AM",
             "activities": [
-              "Private airport transfer to Nusa Dua resort",
-              "Hotel orientation"
-            ]
-          },
-          {
-            "day": 2,
-            "title": "Leisure at the resort",
-            "activities": [
-              "Morning yoga by the beach",
-              "Half-day Balinese spa ritual",
-              "Fine dining dinner at your resort"
-            ]
-          },
-          {
-            "day": 3,
-            "title": "Culture & Elegance",
-            "activities": [
-              "Visit Uluwatu Temple with Kecak dance performance",
-              "Gourmet seafood dinner overlooking the cliffs"
-            ]
-          },
-          {
-            "day": 4,
-            "title": "Ubud Day Trip",
-            "activities": [
-              "Private tour to Ubud: Monkey Forest, Tegallalang Rice Terraces",
-              "Lunch at a riverside restaurant",
-              "Evening return to Nusa Dua for relaxation"
-            ]
-          },
-          {
-            "day": 5,
-            "title": "Island Escape",
-            "activities": [
-              "Luxury catamaran cruise to Nusa Penida or Lembongan",
-              "Snorkeling & beach picnic",
-              "Farewell dinner with Balinese cultural show"
-            ]
-          },
-          {
-            "day": 6,
-            "title": "Departure",
-            "activities": [
-              "Leisure breakfast",
-              "Departure"
+              "8 AM pick-up from the hotel",
+              "Visit Wanagiri Hidden Hill",
+              "Visit Handara Gate",
+              "Visit Beratan Lake Temple",
+              "Visit Taman Ayun Temple",
+              "Back to hotel"
             ]
           }
         ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 940000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 190000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 560000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 210000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 180000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 550000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 210000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 180000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 540000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 200000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 170000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 520000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 650000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 510000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 640000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 500000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 620000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 600000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 580000,
+            "unit": "Per Pax"
+          }
+        ],
         "included": [
-          "Private airport transfer",
-          "5 nights at 5-star accommodation",
-          "Daily breakfast",
-          "Professional tour guide",
-          "Private air-conditioned transportation",
-          "Mineral water during the tour"
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary"
         ],
         "excluded": [
-          "Flight tickets",
-          "Travel insurance",
-          "Personal expenses",
-          "Guide/driver tips"
+          "Meals",
+          "Other Personal Expenses"
         ]
       },
       {
         "id": 2,
-        "slug": "premium-adventure",
-        "name": "Premium Package with 5 night stay at Kuta or Seminyak",
-        "type": "ADVENTURE",
-        "duration": "6 Days 5 Nights",
-        "location": "Kuta / Seminyak",
-        "price": "Rp 7.500.000",
+        "slug": "ubud-tour",
+        "name": "Ubud Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "Ubud",
+        "price": "Rp 520.000 / pax",
         "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
-        "overview": "A perfect combination of Bali adventure and culture.",
+        "overview": "Explore Ubud with a private Bali route starting around 8 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
         "highlights": [
-          "Water sports: jet ski, parasailing, banana boat",
-          "White-water rafting Ayung River",
-          "Sunrise trek Mount Batur",
-          "Speedboat to Nusa Penida",
-          "Snorkeling with manta rays"
+          "Art Villages",
+          "Batuan Temple",
+          "Happy Swing Ubud",
+          "Luwak Coffee Plantations",
+          "Tirta Empul Temple"
         ],
         "itinerary": [
           {
             "day": 1,
-            "title": "Arrival & Relaxation",
+            "title": "Ubud Tour - Pickup 8 AM",
             "activities": [
-              "Airport pickup and transfer to your hotel",
-              "Check-in and unwind with a traditional Balinese massage"
-            ]
-          },
-          {
-            "day": 2,
-            "title": "Water Sports Day",
-            "activities": [
-              "Jet ski, parasailing, banana boat rides in Tanjung Benoa",
-              "Afternoon free time",
-              "Dinner at a local seafood restaurant"
-            ]
-          },
-          {
-            "day": 3,
-            "title": "Ubud Adventure",
-            "activities": [
-              "White-water rafting on Ayung River",
-              "Visit Ubud Art Market & Monkey Forest",
-              "Dinner in Ubud before returning to hotel"
-            ]
-          },
-          {
-            "day": 4,
-            "title": "Volcano & Culture",
-            "activities": [
-              "Sunrise trek at Mount Batur",
-              "Hot spring soak afterward",
-              "Afternoon visit to Tirta Empul Temple"
-            ]
-          },
-          {
-            "day": 5,
-            "title": "Island Adventure",
-            "activities": [
-              "Speedboat to Nusa Penida",
-              "Explore Kelingking Beach, Broken Beach, Angel's Billabong",
-              "Snorkeling with manta rays",
-              "Return for farewell dinner"
-            ]
-          },
-          {
-            "day": 6,
-            "title": "Departure",
-            "activities": [
-              "Breakfast & private transfer to airport"
+              "8 AM pick-up from the hotel",
+              "Visit Art Villages",
+              "Visit Batuan Temple",
+              "Visit Happy Swing Ubud",
+              "Visit Luwak Coffee Plantations",
+              "Visit Tirta Empul Temple",
+              "Back to hotel"
             ]
           }
         ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 940000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 590000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 880000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 570000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 860000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 720000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 560000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 820000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 700000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 550000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 680000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 540000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 660000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 520000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 640000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 620000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 600000,
+            "unit": "Per Pax"
+          }
+        ],
         "included": [
-          "Private airport transfer",
-          "5 nights at a 4-star hotel",
-          "Daily breakfast",
-          "Water sports equipment",
-          "Rafting equipment & guide",
-          "Speedboat to Nusa Penida"
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Happy Swing Ubud Package"
         ],
         "excluded": [
-          "Flight tickets",
-          "Travel insurance",
-          "Personal expenses",
-          "Lunch"
+          "Meals",
+          "Other Personal Expenses"
         ]
       },
       {
         "id": 3,
-        "slug": "premium-short-escape",
-        "name": "Three night stay Package at Seminyak or Kuta Area",
-        "type": "SHORT ESCAPE",
-        "duration": "4 Days 3 Nights",
-        "location": "Seminyak / Kuta",
-        "price": "Rp 4.500.000",
+        "slug": "east-bali-instagram-tour",
+        "name": "East Bali Instagram Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "East Bali",
+        "price": "Rp 610.000 / pax",
         "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
-        "overview": "A short weekend escape package for an unforgettable Bali getaway.",
+        "overview": "Explore East Bali Instagram with a private Bali route starting around 3 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
         "highlights": [
-          "Sunset at Uluwatu with Kecak Dance",
-          "Ubud Monkey Forest & Rice Terraces",
-          "Tirta Empul Temple",
-          "Sunrise trek Mount Batur",
+          "Lempuyang Temple",
+          "Maha Kencana Photo Spots",
+          "Tirta Gangga Water Garden",
+          "Kantolampo Waterfall"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "East Bali Instagram Tour - Pickup 3 AM",
+            "activities": [
+              "3 AM pick-up from the hotel",
+              "Visit Lempuyang Temple",
+              "Visit Maha Kencana Photo Spots",
+              "Visit Tirta Gangga Water Garden",
+              "Visit Kantolampo Waterfall",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1110000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 900000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 670000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1000000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 850000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 660000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 970000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 800000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 650000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 940000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 790000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 640000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 620000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 750000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 610000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 730000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 710000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 690000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "south-bali-tour",
+        "name": "South Bali Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "South Bali",
+        "price": "Rp 770.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
+        "overview": "Explore South Bali with a private Bali route starting around 9 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Water Sport Tanjung Benoa",
+          "Pandawa Beach",
+          "Uluwatu Temple",
+          "Enjoy Sunset Dinner at Jimbaran Bay Beach"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "South Bali Tour - Pickup 9 AM",
+            "activities": [
+              "9 AM pick-up from the hotel",
+              "Visit Water Sport Tanjung Benoa",
+              "Visit Pandawa Beach",
+              "Visit Uluwatu Temple",
+              "Visit Enjoy Sunset Dinner at Jimbaran Bay Beach",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1380000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 1190000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 990000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1250000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 1140000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 970000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 1250000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 1120000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 1210000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 1100000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 950000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 1080000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 940000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 1060000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 920000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 1040000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 1020000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 1000000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Water Sport Packages (Jet Ski, Parasiling Adventure, Banana Boat)"
+        ],
+        "excluded": [
+          "Sunset Dinner",
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "kuta-tour",
+        "name": "Kuta Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "Kuta",
+        "price": "Rp 1.500.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "Explore Kuta with a private Bali route starting around 9 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "GWK Cultural Park",
+          "The Edge OneEighty",
+          "Melasti Beach",
+          "Kecak & Fire Dance Performance Melasti"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Kuta Tour - Pickup 9 AM",
+            "activities": [
+              "9 AM pick-up from the hotel",
+              "Visit GWK Cultural Park",
+              "Visit The Edge OneEighty",
+              "Visit Melasti Beach",
+              "Watching Kecak & Fire Dances Performance Melasti",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 2000000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 1790000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 1560000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1880000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 1740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 1550000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 1860000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 1690000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 1540000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 1820000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 1670000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 1520000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 1650000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 1510000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 1640000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 1500000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 1620000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 1600000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 1580000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "The Edge OneEighty General Admissions (IDR 600K/Person F&B Credit)"
+        ],
+        "excluded": [
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 6,
+        "slug": "countryside-tour",
+        "name": "Countryside Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "Bali Countryside",
+        "price": "Rp 440.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+        "overview": "Explore Countryside with a private Bali route starting around 7 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Tanah Lot Temple",
+          "Jatiluwih Rice Terraces",
+          "Beratan Lake Temple",
+          "Taman Ayun Temple"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Countryside Tour - Pickup 7 AM",
+            "activities": [
+              "7 AM pick-up from the hotel",
+              "Enjoy Tanah Lot Temple",
+              "Visit Jatiluwih Rice Terraces",
+              "Visit Beratan Lake Temple",
+              "Visit Taman Ayun Temple",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 990000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 790000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 560000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 860000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 730000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 440000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 840000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 690000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 540000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 810000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 670000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 520000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 650000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 510000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 640000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 500000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 620000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 600000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 580000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 7,
+        "slug": "kintamani-tour",
+        "name": "Kintamani Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "Kintamani",
+        "price": "Rp 640.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
+        "overview": "Explore Kintamani with a private Bali route starting around 8 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Ubud Monkey Forest",
+          "Tegalalang Rice Terraces",
+          "Kintamani Villages",
+          "Penglipuran Villages",
           "Tegenungan Waterfall"
         ],
         "itinerary": [
           {
             "day": 1,
-            "title": "Arrival & Relaxation",
+            "title": "Kintamani Tour - Pickup 8 AM",
             "activities": [
-              "Airport pickup and transfer to your hotel",
-              "Check-in and unwind with a traditional Balinese massage",
-              "Evening: Sunset at Uluwatu with Kecak Dance show followed by welcome dinner"
-            ]
-          },
-          {
-            "day": 2,
-            "title": "Culture & Temples",
-            "activities": [
-              "Morning visit to Ubud Monkey Forest and Ubud Palace",
-              "Explore Tegallalang Rice Terraces",
-              "Afternoon: Tirta Empul Temple for spiritual cleansing ritual",
-              "Evening dinner at Ubud area"
-            ]
-          },
-          {
-            "day": 3,
-            "title": "Adventure & Nature",
-            "activities": [
-              "Early morning trip to Mount Batur for sunrise trekking",
-              "Breakfast overlooking Lake Batur",
-              "Visit a coffee plantation to taste Luwak coffee",
-              "Afternoon: Relax at Tegenungan Waterfall",
-              "Evening: Free time for shopping or spa"
-            ]
-          },
-          {
-            "day": 4,
-            "title": "Departure",
-            "activities": [
-              "Leisurely breakfast at the hotel",
-              "Free time for last-minute shopping or beach stroll",
-              "Transfer to airport for departure"
-            ]
-          }
-        ],
-        "included": [
-          "Private airport transfer",
-          "3 nights at a 4-star hotel",
-          "Daily breakfast",
-          "Professional tour guide",
-          "Private air-conditioned transportation",
-          "Entrance fees for all tourist attractions"
-        ],
-        "excluded": [
-          "Flight tickets",
-          "Travel insurance",
-          "Personal expenses",
-          "Lunch"
-        ]
-      }
-    ]
-  },
-  "adventure-culture": {
-    "destination": "Bali",
-    "title": "Adventure & Culture Tours",
-    "packages": [
-      {
-        "id": 1,
-        "slug": "adventure-combo",
-        "name": "Adventure & Culture Combo",
-        "type": "ADVENTURE",
-        "duration": "5 Days 4 Nights",
-        "location": "Kuta / Seminyak",
-        "price": "Rp 6.500.000",
-        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
-        "overview": "An active Bali journey that combines water adventure, cultural landmarks, local food stops, and scenic nature routes. This package is designed for travelers who want a balanced mix of movement and discovery.",
-        "highlights": [
-          "White-water rafting experience",
-          "Ubud cultural route",
-          "Temple and rice terrace visit",
-          "Nusa Penida island day",
-          "Sunset dinner experience"
-        ],
-        "itinerary": [
-          {
-            "day": 1,
-            "title": "Arrival & Seminyak Area",
-            "activities": [
-              "Airport pickup and transfer to hotel",
-              "Check-in and free time to relax",
-              "Evening dinner around Seminyak or Kuta"
-            ]
-          },
-          {
-            "day": 2,
-            "title": "Ubud Culture & Nature",
-            "activities": [
+              "8 AM pick-up from the hotel",
               "Visit Ubud Monkey Forest",
-              "Explore Tegallalang Rice Terraces",
-              "Lunch stop in Ubud area",
-              "Visit Tirta Empul Temple"
-            ]
-          },
-          {
-            "day": 3,
-            "title": "Rafting & Local Market",
-            "activities": [
-              "White-water rafting on Ayung River",
-              "Lunch after rafting activity",
-              "Visit Ubud Art Market",
-              "Return to hotel for rest"
-            ]
-          },
-          {
-            "day": 4,
-            "title": "Nusa Penida Day Trip",
-            "activities": [
-              "Morning speedboat to Nusa Penida",
-              "Visit Kelingking Beach and Broken Beach",
-              "Photo stop at Angel's Billabong",
-              "Return to Bali for sunset dinner"
-            ]
-          },
-          {
-            "day": 5,
-            "title": "Departure",
-            "activities": [
-              "Breakfast at hotel",
-              "Free time for last-minute shopping",
-              "Transfer to airport or next destination"
+              "Visit Tegalalang Rice Terraces",
+              "Visit Kintamani Villages",
+              "Visit Penglipuran Villages",
+              "Visit Tegenungan Waterfall",
+              "Back to hotel"
             ]
           }
         ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1140000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 930000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 700000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1070000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 870000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 690000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 1000000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 840000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 680000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 950000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 820000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 670000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 800000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 650000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 780000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 640000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 760000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 720000,
+            "unit": "Per Pax"
+          }
+        ],
         "included": [
-          "Private airport transfer",
-          "4 nights accommodation",
-          "Daily breakfast",
-          "Private air-conditioned transportation",
-          "Professional tour guide",
-          "Rafting equipment and guide",
-          "Nusa Penida speedboat ticket"
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary"
         ],
         "excluded": [
-          "Flight tickets",
-          "Travel insurance",
-          "Personal expenses",
-          "Meals outside the itinerary",
-          "Guide/driver tips"
+          "Meals",
+          "Other Personal Expenses"
         ]
-      }
-    ]
-  },
-  "short-escape": {
-    "destination": "Bali",
-    "title": "Short Escape Tours",
-    "packages": [
+      },
       {
-        "id": 1,
-        "slug": "weekend-getaway",
-        "name": "Weekend Getaway Bali",
-        "type": "SHORT ESCAPE",
-        "duration": "3 Days 2 Nights",
-        "location": "Seminyak",
-        "price": "Rp 3.500.000",
-        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
-        "overview": "A compact Bali escape for travelers who want a refreshing short holiday with beach time, sunset moments, easy shopping, and comfortable transfers.",
+        "id": 8,
+        "slug": "east-combined-ubud-tour",
+        "name": "East Combined Ubud Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "East Bali & Ubud",
+        "price": "Rp 620.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "Explore East Combined Ubud with a private Bali route starting around 3 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
         "highlights": [
-          "Relaxed Seminyak stay",
-          "Beach club visit",
-          "Uluwatu sunset route",
-          "Local shopping stop",
-          "Easy airport transfer"
+          "Lempuyang Temple",
+          "Maha Kencana Photo Spots",
+          "Tirta Gangga Water Garden",
+          "Luwak Coffee Plantations",
+          "Celuk Swing Ubud"
         ],
         "itinerary": [
           {
             "day": 1,
-            "title": "Arrival & Relaxation",
+            "title": "East Combined Ubud Tour - Pickup 3 AM",
             "activities": [
-              "Airport pickup and transfer to Seminyak hotel",
-              "Check-in and free time",
-              "Optional dinner around Seminyak"
-            ]
-          },
-          {
-            "day": 2,
-            "title": "Beach & Sunset",
-            "activities": [
-              "Breakfast at hotel",
-              "Beach club or beach leisure time",
-              "Visit Uluwatu Temple",
-              "Sunset dinner experience"
-            ]
-          },
-          {
-            "day": 3,
-            "title": "Shopping & Departure",
-            "activities": [
-              "Breakfast and hotel checkout",
-              "Shopping stop for souvenirs",
-              "Transfer to airport"
+              "3 AM pick-up from the hotel",
+              "Visit Lempuyang Temple",
+              "Visit Maha Kencana Photo Spots",
+              "Visit Tirta Gangga Water Garden",
+              "Visit Luwak Coffee Plantations",
+              "Visit Celuk Swing Ubud",
+              "Visit Art Villages",
+              "Back to hotel"
             ]
           }
         ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1190000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 900000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 680000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1050000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 840000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 670000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 990000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 810000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 650000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 940000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 790000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 640000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 630000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 750000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 620000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 720000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 700000,
+            "unit": "Per Pax"
+          }
+        ],
         "included": [
-          "Private airport transfer",
-          "2 nights accommodation",
-          "Daily breakfast",
-          "Private air-conditioned transportation",
-          "Driver assistance",
-          "Mineral water during the tour"
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Celuk Swing Ubud Packages"
         ],
         "excluded": [
-          "Flight tickets",
-          "Travel insurance",
-          "Personal expenses",
-          "Entrance tickets unless stated",
-          "Meals outside the itinerary"
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 14,
+        "slug": "north-bali-tour",
+        "name": "North Bali Tour",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "North Bali",
+        "price": "Rp 580.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "Explore North Bali with a private Bali route starting around 6 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Sekumpul Waterfall",
+          "Beratan Lake Temple",
+          "Taman Ayun Temple"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "North Bali Tour - Pickup 6 AM",
+            "activities": [
+              "6 AM pick-up from the hotel",
+              "Visit Sekumpul Waterfall",
+              "Visit Beratan Lake Temple",
+              "Visit Taman Ayun Temple",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1150000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 860000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 680000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 920000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 810000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 670000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 890000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 620000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 870000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 750000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 600000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 590000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 720000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 580000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 700000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 680000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 660000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Sekumpul Waterfall Medium Track Packages"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 15,
+        "slug": "east-bali-tour-snorkeling",
+        "name": "East Bali Tour + Snorkeling",
+        "type": "DAY TOUR",
+        "duration": "1 Day Tour",
+        "location": "East Bali",
+        "price": "Rp 700.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+        "overview": "Explore East Bali + Snorkeling with a private Bali route starting around 7 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Tirta Gangga Water Garden",
+          "Blue Lagoon Snorkeling",
+          "Tanjung Jepun Snorkeling",
+          "Goa Lawah Temple"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "East Bali Tour + Snorkeling - Pickup 7 AM",
+            "activities": [
+              "7 AM pick-up from the hotel",
+              "Visit Tirta Gangga Water Garden",
+              "Enjoy Blue Lagoon Snorkeling",
+              "Enjoy Tanjung Jepun Snorkeling",
+              "Visit Goa Lawah Temple",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1280000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 990000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1070000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 940000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 750000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 1040000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 900000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 1000000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 880000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 860000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 720000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 840000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 700000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 820000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 800000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 790000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Blue Lagoon & Tanjung Jepun Snorkeling Packages (All Snorkeling Equipment)"
+        ],
+        "excluded": [
+          "Camera",
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      }
+    ]
+  },
+  "adventure-tours": {
+    "destination": "Bali",
+    "title": "Adventure Tours",
+    "packages": [
+      {
+        "id": 9,
+        "slug": "jeep-sunrise-kintamani-tour",
+        "name": "Jeep Sunrise Kintamani Tour",
+        "type": "ADVENTURE",
+        "duration": "1 Day Tour",
+        "location": "Kintamani",
+        "price": "Rp 1.090.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "Explore Jeep Sunrise Kintamani with a private Bali route starting around 3 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Jeep Sunrise Kintamani",
+          "Kintamani Hot Spring",
+          "Luwak Coffee",
+          "Happy Swing Ubud"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Jeep Sunrise Kintamani Tour - Pickup 3 AM",
+            "activities": [
+              "3 AM pick-up from the hotel",
+              "Enjoy Jeep Sunrise Kintamani",
+              "Visit Kintamani Hot Spring",
+              "Visit Luwak Coffee",
+              "Visit Happy Swing Ubud",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1670000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 1380000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 1150000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1460000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 1320000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 1140000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 1440000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 1290000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 1130000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 1410000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 1270000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 1120000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 1250000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 1100000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 1230000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 1090000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 1210000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 1190000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 1170000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Jeep Sunrise Kintamani Package",
+          "Uma Pakel Swing Package (Single/ Couple Swing)"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 10,
+        "slug": "sunrise-trekking-kintamani-tour",
+        "name": "Sunrise Trekking Kintamani Tour",
+        "type": "ADVENTURE",
+        "duration": "1 Day Tour",
+        "location": "Kintamani",
+        "price": "Rp 1.050.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "Explore Sunrise Trekking Kintamani with a private Bali route starting around 3 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Sunrise Trekking Kintamani",
+          "Kintamani Hot Spring",
+          "Luwak Coffee",
+          "Happy Swing Ubud"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Sunrise Trekking Kintamani Tour - Pickup 3 AM",
+            "activities": [
+              "3 AM pick-up from the hotel",
+              "Enjoy Sunrise Trekking Kintamani",
+              "Visit Kintamani Hot Spring",
+              "Visit Luwak Coffee",
+              "Visit Happy Swing Ubud",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1630000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 1340000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 1120000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1420000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 1320000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 1100000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 1250000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 1090000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 1370000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 1230000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 1080000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 1210000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 1190000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 1050000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 1170000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 1150000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 1140000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Sunrise Trekking Kintamani Package",
+          "Uma Pakel Swing Package (Single/ Couple Swing)"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 11,
+        "slug": "adventures-tour",
+        "name": "Adventures Tour",
+        "type": "ADVENTURE",
+        "duration": "1 Day Tour",
+        "location": "Ubud Area",
+        "price": "Rp 990.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
+        "overview": "Explore Adventure with a private Bali route starting around 8 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "ATV Quad Bike",
+          "White Water Rafting",
+          "Tegenungan Waterfall"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Adventures Tour - Pickup 8 AM",
+            "activities": [
+              "8 AM pick-up from the hotel",
+              "Enjoy ATV Quad Bike",
+              "Enjoy White Water Rafting",
+              "Visit Tegenungan Waterfall",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1450000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 1250000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 1050000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1500000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 1200000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 1040000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 1350000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 1190000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 1030000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 1300000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 1170000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 1020000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 1150000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 1000000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 1130000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 990000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 1110000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 1090000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 1070000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "ATV Quad Bike Package (50 Minutes)",
+          "White Water Rafting Package (1,5 Hours)"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      }
+    ]
+  },
+  "family-tours": {
+    "destination": "Bali",
+    "title": "Family Tours",
+    "packages": [
+      {
+        "id": 12,
+        "slug": "family-tour",
+        "name": "Family Tour",
+        "type": "FAMILY",
+        "duration": "1 Day Tour",
+        "location": "Ubud Area",
+        "price": "Rp 1.710.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+        "overview": "Explore Family with a private Bali route starting around 8 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Silver Class",
+          "Bali Bird Park",
+          "Ubud Monkey Forest"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Family Tour - Pickup 8 AM",
+            "activities": [
+              "8 AM pick-up from the hotel",
+              "Enjoy Silver Class",
+              "Visit Bali Bird Park",
+              "Visit Ubud Monkey Forest",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 2240000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 2000000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 1770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 2120000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 1950000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 1760000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 2080000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 1930000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 1750000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 2040000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 1890000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 1740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 1870000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 1720000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 1850000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 1710000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 1830000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 1810000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 1790000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Silver Class Package"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
+        ]
+      },
+      {
+        "id": 13,
+        "slug": "dolphin-sunrise-and-swim-with-dolphins-lovina",
+        "name": "Dolphin Sunrise & Swim With Dolphins Lovina",
+        "type": "FAMILY",
+        "duration": "1 Day Tour",
+        "location": "Lovina & North Bali",
+        "price": "Rp 710.000 / pax",
+        "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
+        "overview": "Explore Dolphin Sunrise & Swim With Dolphins Lovina with a private Bali route starting around 2:30 AM. This package is arranged with comfortable transportation, an English-speaking driver as guide, mineral water, and itinerary-based entrance fees.",
+        "highlights": [
+          "Sunrise with Dolphins",
+          "Swimming with Dolphin",
+          "Wanagiri Hidden Hill",
+          "Beratan Lake Temple"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Dolphin Sunrise & Swim With Dolphins Lovina - Pickup 2:30 AM",
+            "activities": [
+              "2:30 AM pick-up from the hotel",
+              "Enjoy Sunrise with Dolphins",
+              "Enjoy Swimming with Dolphin",
+              "Visit Wanagiri Hidden Hill",
+              "Visit Beratan Lake Temple",
+              "Back to hotel"
+            ]
+          }
+        ],
+        "pricing": [
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "2 Pax",
+            "sellingPrice": 1290000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "6 Pax",
+            "sellingPrice": 1000000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "15 Pax",
+            "sellingPrice": 770000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "3 Pax",
+            "sellingPrice": 1100000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "7 Pax",
+            "sellingPrice": 940000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "16 Pax",
+            "sellingPrice": 760000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "4 Pax",
+            "sellingPrice": 1070000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "8 Pax",
+            "sellingPrice": 900000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "17 Pax",
+            "sellingPrice": 750000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "AVANZA/SIMILAR",
+            "pax": "5 Pax",
+            "sellingPrice": 1030000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "9 Pax",
+            "sellingPrice": 890000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "18 Pax",
+            "sellingPrice": 740000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "10 Pax",
+            "sellingPrice": 870000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "19 Pax",
+            "sellingPrice": 720000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "11 Pax",
+            "sellingPrice": 850000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "MINIBUS",
+            "pax": "20 Pax",
+            "sellingPrice": 710000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "12 Pax",
+            "sellingPrice": 830000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "13 Pax",
+            "sellingPrice": 810000,
+            "unit": "Per Pax"
+          },
+          {
+            "vehicle": "VAN HIACE",
+            "pax": "14 Pax",
+            "sellingPrice": 790000,
+            "unit": "Per Pax"
+          }
+        ],
+        "included": [
+          "Private Tour with Comfortable Vehicles",
+          "English Speaking Driver as Guide",
+          "Fuel + Parking Fee",
+          "Daily Served Mineral Water",
+          "All Entrances Fee Based on Itinerary",
+          "Watching Sunrise with Dolphin Package",
+          "Swim Sunrise with Dolphin Package"
+        ],
+        "excluded": [
+          "Meals",
+          "Other Personal Expenses"
         ]
       }
     ]

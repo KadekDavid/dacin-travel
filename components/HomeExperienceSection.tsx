@@ -53,14 +53,14 @@ export default function HomeExperienceSection() {
       <div className="mx-auto max-w-7xl space-y-6">
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <span className="mb-3 inline-flex rounded-full bg-[#eef3ff] px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0046FF]">
+            <span className="ui-eyebrow mb-3">
               Travel Experience
             </span>
-            <h2 className="m-0 text-2xl font-extrabold leading-tight tracking-tight text-[#101828] sm:text-4xl">
+            <h2 className="m-0 text-2xl font-extrabold leading-tight tracking-tight text-slate-950 sm:text-4xl">
               More reasons to plan your Bali trip with confidence
             </h2>
           </div>
-          <p className="m-0 max-w-2xl text-sm leading-relaxed text-[#667085] sm:text-base lg:justify-self-end">
+          <p className="m-0 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base lg:justify-self-end">
             A good holiday is not only about the destination. It is also about clear planning, smooth timing, and a route that feels comfortable from start to finish.
           </p>
         </div>
@@ -69,33 +69,33 @@ export default function HomeExperienceSection() {
           {strengths.map((item, index) => (
             <article
               key={item.title}
-              className="rounded-[24px] border border-[#dbe6ff] bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.06)]"
+              className="ui-card p-6"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0046FF] text-sm font-extrabold text-white shadow-[0_16px_30px_rgba(0,70,255,0.22)]">
+              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-md bg-blue-700 text-sm font-extrabold text-white shadow-sm">
                 {String(index + 1).padStart(2, "0")}
               </div>
-              <p className="m-0 text-xs font-bold uppercase tracking-wide text-[#0046FF]">{item.label}</p>
-              <h3 className="m-0 mt-2 text-xl font-bold leading-snug text-[#101828]">{item.title}</h3>
-              <p className="m-0 mt-3 text-sm leading-relaxed text-[#667085]">{item.description}</p>
+              <p className="m-0 text-xs font-bold uppercase tracking-wide text-blue-700">{item.label}</p>
+              <h3 className="m-0 mt-2 text-xl font-bold leading-snug text-slate-950">{item.title}</h3>
+              <p className="m-0 mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
             </article>
           ))}
         </div>
 
         <div className="grid items-start gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="overflow-hidden rounded-[28px] bg-white p-3 shadow-[0_24px_70px_rgba(15,23,42,0.08)] sm:p-4">
+          <div className="ui-card overflow-hidden p-3 sm:p-4">
             <HomeGallerySlider slides={gallery.slice(0, 3)} />
 
-            <div className="mt-4 rounded-[22px] border border-[#dbe6ff] bg-[#f8fbff] p-5">
-              <p className="m-0 text-xs font-bold uppercase tracking-wide text-[#0046FF]">Popular Bali moments</p>
-              <h3 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-[#101828]">
+            <div className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-5">
+              <p className="m-0 text-xs font-bold uppercase tracking-wide text-blue-700">Popular Bali moments</p>
+              <h3 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-slate-950">
                 Add meaningful stops between your main destinations.
               </h3>
-              <p className="m-0 mt-3 text-sm leading-relaxed text-[#667085]">
+              <p className="m-0 mt-3 text-sm leading-7 text-slate-600">
                 We help arrange the small details that make the day feel complete, from a relaxed lunch stop to sunset timing and easy hotel transfers.
               </p>
               <div className="mt-5 grid gap-2 sm:grid-cols-2">
                 {moments.map((moment) => (
-                  <div key={moment} className="rounded-2xl bg-white px-4 py-3 text-sm font-bold text-[#101828] shadow-[0_12px_30px_rgba(15,23,42,0.05)]">
+                  <div key={moment} className="rounded-md border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-slate-950 shadow-sm">
                     {moment}
                   </div>
                 ))}
@@ -104,14 +104,14 @@ export default function HomeExperienceSection() {
           </div>
 
           <div className="flex flex-col gap-4 self-start">
-            <div className="flex min-h-[280px] flex-col justify-center rounded-[28px] bg-[#0046FF] p-6 text-white shadow-[0_24px_70px_rgba(0,70,255,0.2)] sm:min-h-[430px] sm:p-7 lg:min-h-[520px] lg:p-10">
+            <div className="flex min-h-[280px] flex-col justify-center rounded-lg border border-blue-900/20 bg-blue-800 p-6 text-white shadow-sm sm:min-h-[430px] sm:p-7 lg:min-h-[520px] lg:p-10">
               <p className="m-0 text-sm font-bold uppercase tracking-wide text-white/75">Ready for Bali?</p>
               <h3 className="m-0 mt-3 text-2xl font-extrabold leading-tight sm:text-3xl">
                 Choose a package, then shape the details around your group.
               </h3>
               <Link
                 href="/paket-tour"
-                className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-6 text-sm font-bold text-[#0046FF] no-underline transition hover:-translate-y-0.5 sm:w-fit"
+                className="ui-btn mt-6 w-full border-white bg-white text-blue-700 hover:bg-slate-50 sm:w-fit"
               >
                 View Packages
               </Link>
@@ -119,9 +119,9 @@ export default function HomeExperienceSection() {
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
               {testimonials.map((item) => (
-                <article key={item.name} className="rounded-[24px] border border-[#dbe6ff] bg-white p-5 shadow-[0_18px_48px_rgba(15,23,42,0.06)]">
-                  <p className="m-0 text-base font-semibold leading-relaxed text-[#101828]">&quot;{item.quote}&quot;</p>
-                  <p className="m-0 mt-4 text-sm font-bold text-[#0046FF]">{item.name}</p>
+                <article key={item.name} className="ui-card p-5">
+                  <p className="m-0 text-base font-semibold leading-7 text-slate-950">&quot;{item.quote}&quot;</p>
+                  <p className="m-0 mt-4 text-sm font-bold text-blue-700">{item.name}</p>
                 </article>
               ))}
             </div>

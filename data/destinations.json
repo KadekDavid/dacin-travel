@@ -1,26 +1,26 @@
 [
   {
-    "id": "luxury-relaxation",
-    "name": "Luxury & Relaxation",
-    "slug": "luxury-relaxation",
+    "id": "bali-day-tours",
+    "name": "Bali Day Tours",
+    "slug": "bali-day-tours",
     "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443582/nusadua_s8l2hp.jpg",
+    "tours": 10,
+    "location": "Bali, Indonesia"
+  },
+  {
+    "id": "adventure-tours",
+    "name": "Adventure Tours",
+    "slug": "adventure-tours",
+    "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
     "tours": 3,
     "location": "Bali, Indonesia"
   },
   {
-    "id": "adventure-culture",
-    "name": "Adventure & Culture",
-    "slug": "adventure-culture",
-    "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443801/advanture_mdfcry.jpg",
-    "tours": 4,
-    "location": "Bali, Indonesia"
-  },
-  {
-    "id": "short-escape", 
-    "name": "Short Escape",
-    "slug": "short-escape",
+    "id": "family-tours",
+    "name": "Family Tours",
+    "slug": "family-tours",
     "image": "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777443911/escape_l4sfoo.jpg",
-    "tours": 1,
+    "tours": 2,
     "location": "Bali, Indonesia"
   }
 ]
