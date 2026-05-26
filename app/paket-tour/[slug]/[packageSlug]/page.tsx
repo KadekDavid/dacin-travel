@@ -8,21 +8,18 @@ import { getPackageGalleryImages } from "@/lib/package-gallery";
 
 type PackageDetailParams = Promise<{ slug: string; packageSlug: string }>;
 
-const testimonials = [
+const planningChecklist = [
   {
-    name: "Family Holiday",
-    type: "Private Bali Trip",
-    quote: "The route was clear, the pickup was on time, and the schedule felt comfortable for the whole family.",
+    title: "Share your travel date",
+    description: "Availability and pickup timing can be checked more clearly when the date and hotel area are known.",
   },
   {
-    name: "Group Tour",
-    type: "Custom Package",
-    quote: "Every detail was easy to understand, from inclusions to the daily timing. It made the trip feel smooth.",
+    title: "Confirm group size",
+    description: "Guest count helps match the vehicle option and per-pax selling price to your group.",
   },
   {
-    name: "Weekend Escape",
-    type: "Short Stay",
-    quote: "A short trip still felt complete because the destination order and transfer timing were well arranged.",
+    title: "Review inclusions first",
+    description: "Check what is included and excluded before confirming so the final plan stays transparent.",
   },
 ];
 
@@ -129,6 +126,38 @@ function getPricingGroups<T extends PricingRate>(pricing: T[]) {
 
 function buildPackageDescription(packageData: { name: string; duration: string; location: string; overview: string }) {
   return `${packageData.name} in ${packageData.location}. ${packageData.duration}. ${packageData.overview}`;
+}
+
+function buildPackageWhatsAppUrl(packageData: { name: string; duration: string; location: string; price: string }) {
+  const message = [
+    "Hello, I'd like to ask about this Bali tour package:",
+    `Package: ${packageData.name}`,
+    `Duration: ${packageData.duration}`,
+    `Area: ${packageData.location}`,
+    `Starting price: ${packageData.price}`,
+    "Travel date:",
+    "Group size:",
+    "Hotel / pickup area:",
+  ].join("\n");
+
+  return `https://wa.me/6281337373852?text=${encodeURIComponent(message)}`;
+}
+
+function getPackageSeoSections(packageData: { name: string; type: string; duration: string; location: string; overview: string }) {
+  return [
+    {
+      title: `About ${packageData.name}`,
+      body: `${packageData.name} is arranged as a ${packageData.duration.toLowerCase()} around ${packageData.location}. The route is designed to help travelers understand the main stops, transport flow, and package inclusions before asking for availability.`,
+    },
+    {
+      title: "Who this package is for",
+      body: `This package is suitable for guests who want a ${packageData.type.toLowerCase()} option with clearer timing, pickup planning, and a route that can be discussed before confirmation. It works best when travelers share their date, hotel area, and group size early.`,
+    },
+    {
+      title: "Planning notes",
+      body: "For the smoothest trip, keep the pickup point realistic, leave enough time between major stops, and review what is included and excluded before booking. The final route can be checked through WhatsApp so the travel day feels more organized.",
+    },
+  ];
 }
 
 function ItineraryIcon() {
@@ -315,6 +344,8 @@ export default async function PackageDetailPage({
 
   const galleryImages = getPackageGalleryImages(packageData.slug, packageData.image);
   const packageDescription = buildPackageDescription(packageData);
+  const packageWhatsAppUrl = buildPackageWhatsAppUrl(packageData);
+  const packageSeoSections = getPackageSeoSections(packageData);
   const pricingGroups = getPricingGroups(packageData.pricing);
   const packageJsonLd = {
     "@context": "https://schema.org",
@@ -458,13 +489,15 @@ export default async function PackageDetailPage({
               </div>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <button
-                  type="button"
+                <a
+                  href={packageWhatsAppUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className="ui-btn ui-btn-primary w-full gap-2 sm:w-auto"
                 >
                   Book Now
                   <ArrowRightIcon />
-                </button>
+                </a>
                 <a
                   href="#package-itinerary"
                   className="ui-btn ui-btn-secondary w-full sm:w-auto"
@@ -719,7 +752,37 @@ export default async function PackageDetailPage({
           </aside>
         </section>
 
-        {/* FAQ & Testimonials */}
+        {/* SEO package content */}
+        <section className="mt-8 grid gap-4 sm:mt-12 lg:grid-cols-3">
+          {packageSeoSections.map((section) => (
+            <article key={section.title} className="ui-card p-5 sm:p-6">
+              <p className="m-0 text-xs font-bold uppercase tracking-wide text-blue-700">Package Guide</p>
+              <h2 className="m-0 mt-2 text-xl font-extrabold leading-snug text-slate-950">{section.title}</h2>
+              <p className="m-0 mt-3 text-sm leading-7 text-slate-600">{section.body}</p>
+            </article>
+          ))}
+        </section>
+
+        <section className="mt-6 rounded-lg border border-blue-900/20 bg-blue-800 p-6 text-white shadow-sm sm:p-8">
+          <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="m-0 text-sm font-bold uppercase tracking-wide text-white/75">Ready to check availability?</p>
+              <h2 className="m-0 mt-2 text-2xl font-extrabold leading-tight sm:text-3xl">
+                Send this package detail to WhatsApp and confirm your date.
+              </h2>
+            </div>
+            <a
+              href={packageWhatsAppUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="ui-btn w-full border-white bg-white text-blue-700 hover:bg-slate-50 sm:w-fit"
+            >
+              Ask About This Package
+            </a>
+          </div>
+        </section>
+
+        {/* FAQ & planning notes */}
         <section className="mt-8 grid gap-6 sm:mt-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(330px,0.95fr)]">
           <div className="ui-card p-4 sm:p-8">
             <div className="mb-6">
@@ -747,24 +810,21 @@ export default async function PackageDetailPage({
           <div className="ui-card p-4 sm:p-8">
             <div className="mb-6">
               <span className="ui-eyebrow mb-3">
-                Testimonials
+                Before Booking
               </span>
               <h2 className="m-0 text-2xl font-extrabold leading-tight text-slate-950 sm:text-[28px]">
-                What travelers appreciate
+                Planning checklist
               </h2>
             </div>
 
             <div className="space-y-4">
-              {testimonials.map((item) => (
-                <article key={item.name} className="rounded-lg border border-slate-200 bg-slate-50 p-5">
-                  <p className="m-0 text-base font-semibold leading-7 text-slate-950">&quot;{item.quote}&quot;</p>
-                  <div className="mt-4 flex items-center justify-between gap-3">
-                    <div>
-                      <p className="m-0 text-sm font-extrabold text-slate-950">{item.name}</p>
-                      <p className="m-0 mt-1 text-xs font-bold uppercase tracking-wide text-blue-700">{item.type}</p>
-                    </div>
-                    <span className="rounded-lg bg-blue-700 px-3 py-1 text-xs font-bold text-white">5.0</span>
-                  </div>
+              {planningChecklist.map((item, index) => (
+                <article key={item.title} className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-blue-700 text-sm font-extrabold text-white">
+                    {index + 1}
+                  </span>
+                  <h3 className="m-0 mt-4 text-base font-extrabold leading-snug text-slate-950">{item.title}</h3>
+                  <p className="m-0 mt-2 text-sm leading-6 text-slate-600">{item.description}</p>
                 </article>
               ))}
             </div>

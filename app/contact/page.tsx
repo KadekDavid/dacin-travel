@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactPlanningForm from "@/components/ContactPlanningForm";
 
 export const metadata: Metadata = {
   title: "Contact | Dacin Travel",
@@ -76,6 +77,28 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+
+        <section className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+          <ContactPlanningForm />
+          <div className="ui-card-muted p-5 sm:p-7">
+            <p className="m-0 text-sm font-bold uppercase tracking-wide text-blue-700">Trust Information</p>
+            <h2 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-slate-950">
+              Clear details before any confirmation
+            </h2>
+            <div className="mt-5 grid gap-3">
+              {[
+                "Package inclusions and exclusions are shown before booking.",
+                "Pickup area, date, and group size are checked first.",
+                "Vehicle and per-pax pricing can be reviewed on package detail pages.",
+                "Information is kept factual while the travel service is being prepared.",
+              ].map((item) => (
+                <div key={item} className="rounded-md border border-slate-200 bg-white p-4 text-sm font-semibold leading-6 text-slate-700">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <div className="mt-10 rounded-lg border border-blue-900/20 bg-blue-800 p-6 text-white shadow-sm sm:p-8">
           <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">

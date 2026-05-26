@@ -8,6 +8,37 @@ type ArticleDetailProps = {
   params: Promise<{ slug: string }>;
 };
 
+const articlePackageLinks: Record<string, Array<{ title: string; href: string; label: string }>> = {
+  "balanced-bali-holiday": [
+    { title: "Ubud Tour", href: "/paket-tour/bali-day-tours/ubud-tour", label: "Culture route" },
+    { title: "South Bali Tour", href: "/paket-tour/bali-day-tours/south-bali-tour", label: "Beach route" },
+  ],
+  "relaxing-nusa-dua-escape": [
+    { title: "South Bali Tour", href: "/paket-tour/bali-day-tours/south-bali-tour", label: "Relaxed day tour" },
+    { title: "Family Tour", href: "/paket-tour/family-tours/family-tour", label: "Family option" },
+  ],
+  "adventure-days-kuta-seminyak": [
+    { title: "Jeep Sunrise Kintamani Tour", href: "/paket-tour/adventure-tours/jeep-sunrise-kintamani-tour", label: "Adventure route" },
+    { title: "Adventures Tour", href: "/paket-tour/adventure-tours/adventures-tour", label: "Active package" },
+  ],
+  "weekend-bali-itinerary": [
+    { title: "Kuta Tour", href: "/paket-tour/bali-day-tours/kuta-tour", label: "Short escape" },
+    { title: "Ubud Tour", href: "/paket-tour/bali-day-tours/ubud-tour", label: "One-day route" },
+  ],
+  "temple-etiquette-cultural-tips": [
+    { title: "East Bali Instagram Tour", href: "/paket-tour/bali-day-tours/east-bali-instagram-tour", label: "Temple route" },
+    { title: "Bedugul Tour", href: "/paket-tour/bali-day-tours/bedugul-tour", label: "Cultural stop" },
+  ],
+  "private-tour-or-open-trip": [
+    { title: "Bali Day Tours", href: "/paket-tour?type=DAY%20TOUR", label: "Compare options" },
+    { title: "Family Tour", href: "/paket-tour/family-tours/family-tour", label: "Private planning" },
+  ],
+  "easy-food-stops-between-destinations": [
+    { title: "Countryside Tour", href: "/paket-tour/bali-day-tours/countryside-tour", label: "Route planning" },
+    { title: "North Bali Tour", href: "/paket-tour/bali-day-tours/north-bali-tour", label: "Longer route" },
+  ],
+};
+
 function BreadcrumbHomeIcon() {
   return (
     <svg aria-hidden="true" className="h-4 w-4 shrink-0" viewBox="0 0 16 16" fill="none">
@@ -57,9 +88,30 @@ export default async function ArticleDetailPage({ params }: ArticleDetailProps) 
   }
 
   const relatedArticles = allArticles.filter((item) => item.slug !== article.slug).slice(0, 3);
+  const relatedPackages = articlePackageLinks[article.slug] ?? [];
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    image: article.image,
+    datePublished: article.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: "Dacin Travel",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Dacin Travel",
+    },
+  };
 
   return (
     <main className="overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <section className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:px-8 lg:pt-16">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-5 sm:mb-6">
@@ -168,6 +220,24 @@ export default async function ArticleDetailPage({ params }: ArticleDetailProps) 
               View Packages
             </Link>
           </div>
+
+          {relatedPackages.length > 0 && (
+            <div className="ui-card p-6">
+              <p className="m-0 text-sm font-bold uppercase tracking-wide text-blue-700">Related Packages</p>
+              <div className="mt-4 space-y-3">
+                {relatedPackages.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block rounded-md border border-slate-200 bg-slate-50 p-4 no-underline transition hover:border-slate-300 hover:bg-white"
+                  >
+                    <span className="text-xs font-bold uppercase tracking-wide text-blue-700">{item.label}</span>
+                    <span className="mt-1 block text-sm font-extrabold text-slate-950">{item.title}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </aside>
       </section>
 

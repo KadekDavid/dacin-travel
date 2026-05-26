@@ -34,14 +34,16 @@ const gallery = [
   },
 ];
 
-const testimonials = [
+const planningNotes = [
   {
-    name: "Family Holiday",
-    quote: "The schedule felt comfortable and every stop was easy to follow.",
+    label: "Before booking",
+    title: "Confirm the group details first",
+    description: "Share your date, hotel area, guest count, and preferred route so the package can be checked properly.",
   },
   {
-    name: "Private Group",
-    quote: "Pickup, transport, and destination timing were handled clearly.",
+    label: "During planning",
+    title: "Keep the route realistic",
+    description: "A focused itinerary with logical transfers usually feels better than too many distant stops in one day.",
   },
 ];
 
@@ -52,33 +54,6 @@ export default function HomeExperienceSection() {
     <section className="px-4 pb-16 pt-4 sm:px-6 sm:pb-20 md:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl space-y-6">
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-          <div>
-            <span className="ui-eyebrow mb-3">
-              Travel Experience
-            </span>
-            <h2 className="m-0 text-2xl font-extrabold leading-tight tracking-tight text-slate-950 sm:text-4xl">
-              More reasons to plan your Bali trip with confidence
-            </h2>
-          </div>
-          <p className="m-0 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base lg:justify-self-end">
-            A good holiday is not only about the destination. It is also about clear planning, smooth timing, and a route that feels comfortable from start to finish.
-          </p>
-        </div>
-
-        <div className="grid gap-4 lg:grid-cols-3">
-          {strengths.map((item, index) => (
-            <article
-              key={item.title}
-              className="ui-card p-6"
-            >
-              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-md bg-blue-700 text-sm font-extrabold text-white shadow-sm">
-                {String(index + 1).padStart(2, "0")}
-              </div>
-              <p className="m-0 text-xs font-bold uppercase tracking-wide text-blue-700">{item.label}</p>
-              <h3 className="m-0 mt-2 text-xl font-bold leading-snug text-slate-950">{item.title}</h3>
-              <p className="m-0 mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
-            </article>
-          ))}
         </div>
 
         <div className="grid items-start gap-6 lg:grid-cols-[1.15fr_0.85fr]">
@@ -118,10 +93,11 @@ export default function HomeExperienceSection() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              {testimonials.map((item) => (
-                <article key={item.name} className="ui-card p-5">
-                  <p className="m-0 text-base font-semibold leading-7 text-slate-950">&quot;{item.quote}&quot;</p>
-                  <p className="m-0 mt-4 text-sm font-bold text-blue-700">{item.name}</p>
+              {planningNotes.map((item) => (
+                <article key={item.title} className="ui-card p-5">
+                  <p className="m-0 text-xs font-bold uppercase tracking-wide text-blue-700">{item.label}</p>
+                  <h4 className="m-0 mt-2 text-lg font-extrabold leading-snug text-slate-950">{item.title}</h4>
+                  <p className="m-0 mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
                 </article>
               ))}
             </div>

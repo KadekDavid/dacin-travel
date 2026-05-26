@@ -22,6 +22,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Packages", href: "/paket-tour" },
     { name: "Articles", href: "/artikel" },
+    { name: "Gallery", href: "/gallery" },
     { name: "About Us", href: "/tentang" },
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
