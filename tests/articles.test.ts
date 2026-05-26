@@ -21,11 +21,14 @@ test("missing article slug returns undefined", () => {
 
 test("each article has enough content for the detail page", () => {
   for (const article of allArticles) {
+    const paragraphCount = article.sections.reduce((count, section) => count + section.body.length, 0);
+
     assert.ok(article.title.length > 0, `${article.slug} needs a title`);
     assert.ok(article.excerpt.length > 0, `${article.slug} needs an excerpt`);
     assert.ok(article.image.length > 0, `${article.slug} needs an image`);
     assert.ok(article.highlights.length > 0, `${article.slug} needs highlights`);
-    assert.ok(article.sections.length > 0, `${article.slug} needs content sections`);
+    assert.ok(article.sections.length >= 4, `${article.slug} needs richer content sections`);
     assert.ok(article.sections.every((section) => section.body.length > 0), `${article.slug} has an empty section`);
+    assert.ok(paragraphCount >= 10, `${article.slug} needs longer article content`);
   }
 });
