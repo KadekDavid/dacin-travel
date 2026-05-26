@@ -25,7 +25,7 @@ export default function Footer() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
-                    href="/paket-tour"
+                    href="/packages"
                     className="block text-slate-400 transition hover:text-white"
                   >
                     Package
@@ -41,7 +41,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/artikel"
+                    href="/articles"
                     className="block text-slate-400 transition hover:text-white"
                   >
                     Article
@@ -49,7 +49,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/tentang"
+                    href="/about-us"
                     className="block text-slate-400 transition hover:text-white"
                   >
                     About Us
@@ -105,7 +105,7 @@ export default function Footer() {
             WhatsApp
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/dacin_dmc/"
             className="inline-flex min-h-10 items-center rounded-md border border-white/10 px-4 text-xs font-semibold text-slate-400 transition hover:border-blue-500 hover:text-white sm:text-sm"
           >
             Instagram

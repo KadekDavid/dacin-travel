@@ -20,19 +20,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${siteUrl}/paket-tour`,
+      url: `${siteUrl}/packages`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${siteUrl}/artikel`,
+      url: `${siteUrl}/articles`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${siteUrl}/tentang`,
+      url: `${siteUrl}/about-us`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -58,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = allArticles.map((article) => ({
-    url: `${siteUrl}/artikel/${article.slug}`,
+    url: `${siteUrl}/articles/${article.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.6,
@@ -66,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const packageRoutes: MetadataRoute.Sitemap = Object.entries(packagesDetail).flatMap(([destinationSlug, destination]) =>
     destination.packages.map((packageData) => ({
-      url: `${siteUrl}/paket-tour/${destinationSlug}/${packageData.slug}`,
+      url: `${siteUrl}/packages/${destinationSlug}/${packageData.slug}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.9,

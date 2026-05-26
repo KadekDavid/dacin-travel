@@ -20,10 +20,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Packages", href: "/paket-tour" },
-    { name: "Articles", href: "/artikel" },
+    { name: "Packages", href: "/packages" },
+    { name: "Articles", href: "/articles" },
     { name: "Gallery", href: "/gallery" },
-    { name: "About Us", href: "/tentang" },
+    { name: "About Us", href: "/about-us" },
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
   ];

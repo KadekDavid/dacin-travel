@@ -69,7 +69,7 @@ export function getPackageImage(image: string, type: string) {
 }
 
 export function getPackageDetailUrl(destinationSlug: string, packageSlug: string) {
-  return `/paket-tour/${destinationSlug}/${packageSlug}`;
+  return `/packages/${destinationSlug}/${packageSlug}`;
 }
 
 export function flattenPackageDetails(packagesDetail: RawPackagesDetail): PackageSummary[] {
@@ -107,7 +107,7 @@ export function getPackageTypeFromDestinationSlug(destinationSlug: string) {
 export function getPackagesFilterUrl(destinationSlug: string) {
   const packageType = getPackageTypeFromDestinationSlug(destinationSlug);
 
-  return packageType === "All" ? "/paket-tour" : `/paket-tour?type=${encodeURIComponent(packageType)}`;
+  return packageType === "All" ? "/packages" : `/packages?type=${encodeURIComponent(packageType)}`;
 }
 
 export function parseIdrPrice(price: string) {

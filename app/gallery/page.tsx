@@ -91,7 +91,7 @@ export default function GalleryPage() {
             Choose a package and let the team help shape the route around your schedule.
           </p>
           <Link
-            href="/paket-tour"
+            href="/packages"
             className="ui-btn mt-5 border-white bg-white text-blue-700 hover:bg-slate-50"
           >
             View Packages

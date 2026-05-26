@@ -20,10 +20,10 @@ export default function HeroSection() {
               we bring you the ultimate Bali holiday experience.
             </p>
             <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-center lg:justify-start">
-              <Link href="/paket-tour" className="ui-btn ui-btn-primary">
+              <Link href="/packages" className="ui-btn ui-btn-primary">
                 Explore Tours
               </Link>
-              <Link href="/tentang" className="ui-btn ui-btn-secondary">
+              <Link href="/about-us" className="ui-btn ui-btn-secondary">
                 About Us
               </Link>
             </div>

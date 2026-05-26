@@ -10,32 +10,32 @@ type ArticleDetailProps = {
 
 const articlePackageLinks: Record<string, Array<{ title: string; href: string; label: string }>> = {
   "balanced-bali-holiday": [
-    { title: "Ubud Tour", href: "/paket-tour/bali-day-tours/ubud-tour", label: "Culture route" },
-    { title: "South Bali Tour", href: "/paket-tour/bali-day-tours/south-bali-tour", label: "Beach route" },
+    { title: "Ubud Tour", href: "/packages/bali-day-tours/ubud-tour", label: "Culture route" },
+    { title: "South Bali Tour", href: "/packages/bali-day-tours/south-bali-tour", label: "Beach route" },
   ],
   "relaxing-nusa-dua-escape": [
-    { title: "South Bali Tour", href: "/paket-tour/bali-day-tours/south-bali-tour", label: "Relaxed day tour" },
-    { title: "Family Tour", href: "/paket-tour/family-tours/family-tour", label: "Family option" },
+    { title: "South Bali Tour", href: "/packages/bali-day-tours/south-bali-tour", label: "Relaxed day tour" },
+    { title: "Family Tour", href: "/packages/family-tours/family-tour", label: "Family option" },
   ],
   "adventure-days-kuta-seminyak": [
-    { title: "Jeep Sunrise Kintamani Tour", href: "/paket-tour/adventure-tours/jeep-sunrise-kintamani-tour", label: "Adventure route" },
-    { title: "Adventures Tour", href: "/paket-tour/adventure-tours/adventures-tour", label: "Active package" },
+    { title: "Jeep Sunrise Kintamani Tour", href: "/packages/adventure-tours/jeep-sunrise-kintamani-tour", label: "Adventure route" },
+    { title: "Adventures Tour", href: "/packages/adventure-tours/adventures-tour", label: "Active package" },
   ],
   "weekend-bali-itinerary": [
-    { title: "Kuta Tour", href: "/paket-tour/bali-day-tours/kuta-tour", label: "Short escape" },
-    { title: "Ubud Tour", href: "/paket-tour/bali-day-tours/ubud-tour", label: "One-day route" },
+    { title: "Kuta Tour", href: "/packages/bali-day-tours/kuta-tour", label: "Short escape" },
+    { title: "Ubud Tour", href: "/packages/bali-day-tours/ubud-tour", label: "One-day route" },
   ],
   "temple-etiquette-cultural-tips": [
-    { title: "East Bali Instagram Tour", href: "/paket-tour/bali-day-tours/east-bali-instagram-tour", label: "Temple route" },
-    { title: "Bedugul Tour", href: "/paket-tour/bali-day-tours/bedugul-tour", label: "Cultural stop" },
+    { title: "East Bali Instagram Tour", href: "/packages/bali-day-tours/east-bali-instagram-tour", label: "Temple route" },
+    { title: "Bedugul Tour", href: "/packages/bali-day-tours/bedugul-tour", label: "Cultural stop" },
   ],
   "private-tour-or-open-trip": [
-    { title: "Bali Day Tours", href: "/paket-tour?type=DAY%20TOUR", label: "Compare options" },
-    { title: "Family Tour", href: "/paket-tour/family-tours/family-tour", label: "Private planning" },
+    { title: "Bali Day Tours", href: "/packages?type=DAY%20TOUR", label: "Compare options" },
+    { title: "Family Tour", href: "/packages/family-tours/family-tour", label: "Private planning" },
   ],
   "easy-food-stops-between-destinations": [
-    { title: "Countryside Tour", href: "/paket-tour/bali-day-tours/countryside-tour", label: "Route planning" },
-    { title: "North Bali Tour", href: "/paket-tour/bali-day-tours/north-bali-tour", label: "Longer route" },
+    { title: "Countryside Tour", href: "/packages/bali-day-tours/countryside-tour", label: "Route planning" },
+    { title: "North Bali Tour", href: "/packages/bali-day-tours/north-bali-tour", label: "Longer route" },
   ],
 };
 
@@ -130,7 +130,7 @@ export default async function ArticleDetailPage({ params }: ArticleDetailProps) 
             </li>
             <li className="shrink-0">
               <Link
-                href="/artikel"
+                href="/articles"
                 className="inline-flex min-h-9 items-center rounded-lg px-3 font-extrabold text-blue-700 no-underline transition hover:bg-slate-50"
               >
                 Articles
@@ -214,7 +214,7 @@ export default async function ArticleDetailPage({ params }: ArticleDetailProps) 
             <p className="m-0 text-sm font-bold uppercase tracking-wide text-white/75">Need a ready route?</p>
             <h2 className="m-0 mt-3 text-2xl font-bold leading-tight">Explore Bali packages made for your schedule.</h2>
             <Link
-              href="/paket-tour"
+              href="/packages"
               className="ui-btn mt-5 w-full border-white bg-white text-blue-700 hover:bg-slate-50"
             >
               View Packages
@@ -247,7 +247,7 @@ export default async function ArticleDetailPage({ params }: ArticleDetailProps) 
             <p className="m-0 text-sm font-bold uppercase tracking-wide text-blue-700">More Articles</p>
             <h2 className="m-0 mt-2 text-2xl font-bold text-slate-950 sm:text-3xl">Continue reading</h2>
           </div>
-          <Link href="/artikel" className="text-sm font-bold text-blue-700 no-underline">
+          <Link href="/articles" className="text-sm font-bold text-blue-700 no-underline">
             All articles
           </Link>
         </div>
@@ -256,7 +256,7 @@ export default async function ArticleDetailPage({ params }: ArticleDetailProps) 
           {relatedArticles.map((item) => (
             <Link
               key={item.slug}
-              href={`/artikel/${item.slug}`}
+              href={`/articles/${item.slug}`}
               className="ui-card group overflow-hidden text-inherit no-underline transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
             >
               <article>

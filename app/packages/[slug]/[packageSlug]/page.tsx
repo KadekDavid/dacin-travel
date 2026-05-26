@@ -416,7 +416,7 @@ export default async function PackageDetailPage({
             </li>
             <li className="shrink-0">
               <Link
-                href="/paket-tour"
+                href="/packages"
                 className="inline-flex min-h-9 items-center rounded-lg px-3 font-extrabold text-blue-700 no-underline transition hover:bg-slate-50"
               >
                 Packages

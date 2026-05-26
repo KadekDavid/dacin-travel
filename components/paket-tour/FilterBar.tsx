@@ -14,7 +14,7 @@ export default function FilterBar({ currentSlug, destinations }: FilterBarProps)
   const [tripType, setTripType] = useState("All Trip Types");
 
   const handleSearch = () => {
-    router.push(`/paket-tour/${selectedSlug}`);
+    router.push(`/packages/${selectedSlug}`);
   };
 
   return (

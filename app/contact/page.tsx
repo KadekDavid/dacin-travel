@@ -31,8 +31,8 @@ export default function ContactPage() {
   return (
     <main className="overflow-x-hidden">
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 sm:pt-12 lg:px-8 lg:pt-16">
-        <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div>
+        <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+          <div className="ui-card flex h-full flex-col justify-center p-5 sm:p-7 lg:p-8">
             <span className="ui-eyebrow mb-4">
               Contact
             </span>
@@ -60,13 +60,17 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="ui-card p-5 sm:p-7">
-            <div className="grid gap-4">
+          <div className="ui-card h-full p-5 sm:p-7 lg:p-8">
+            <div className="mb-5">
+              <p className="m-0 text-sm font-bold uppercase tracking-wide text-blue-700">Contact Channels</p>
+              <h2 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-slate-950">Choose the easiest way to reach us</h2>
+            </div>
+            <div className="grid gap-3">
               {contactMethods.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="rounded-lg border border-slate-200 bg-slate-50 p-5 no-underline transition hover:border-slate-300 hover:bg-white"
+                  className="rounded-lg border border-slate-200 bg-slate-50 p-4 no-underline transition hover:border-blue-200 hover:bg-white hover:shadow-sm sm:p-5"
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noreferrer" : undefined}
                 >
@@ -78,21 +82,26 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <section className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+        <section className="mt-6 grid gap-6 lg:grid-cols-2 lg:items-stretch">
           <ContactPlanningForm />
-          <div className="ui-card-muted p-5 sm:p-7">
-            <p className="m-0 text-sm font-bold uppercase tracking-wide text-blue-700">Trust Information</p>
-            <h2 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-slate-950">
-              Clear details before any confirmation
-            </h2>
-            <div className="mt-5 grid gap-3">
+          <div className="ui-card-muted flex h-full flex-col p-5 sm:p-7 lg:p-8">
+            <div>
+              <p className="m-0 text-sm font-bold uppercase tracking-wide text-blue-700">Trust Information</p>
+              <h2 className="m-0 mt-2 text-2xl font-extrabold leading-tight text-slate-950">
+                Clear details before any confirmation
+              </h2>
+              <p className="m-0 mt-3 text-sm leading-7 text-slate-600">
+                We keep the planning flow direct, transparent, and easy to review before you decide on a package.
+              </p>
+            </div>
+            <div className="mt-5 grid flex-1 gap-3">
               {[
                 "Package inclusions and exclusions are shown before booking.",
                 "Pickup area, date, and group size are checked first.",
                 "Vehicle and per-pax pricing can be reviewed on package detail pages.",
                 "Information is kept factual while the travel service is being prepared.",
               ].map((item) => (
-                <div key={item} className="rounded-md border border-slate-200 bg-white p-4 text-sm font-semibold leading-6 text-slate-700">
+                <div key={item} className="flex items-center rounded-md border border-slate-200 bg-white p-4 text-sm font-semibold leading-6 text-slate-700">
                   {item}
                 </div>
               ))}

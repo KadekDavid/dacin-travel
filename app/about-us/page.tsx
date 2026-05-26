@@ -45,13 +45,13 @@ export default function AboutPage() {
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/paket-tour"
+                href="/packages"
                 className="ui-btn ui-btn-primary w-full sm:w-auto"
               >
                 View Packages
               </Link>
               <Link
-                href="/artikel"
+                href="/articles"
                 className="ui-btn ui-btn-secondary w-full sm:w-auto"
               >
                 Read Articles

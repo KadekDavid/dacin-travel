@@ -67,7 +67,7 @@ export default function HomeExperienceSection() {
                 Choose a package, then shape the details around your group.
               </h3>
               <Link
-                href="/paket-tour"
+                href="/packages"
                 className="ui-btn mt-6 w-full border-white bg-white text-blue-700 hover:bg-slate-50 sm:w-fit"
               >
                 View Packages

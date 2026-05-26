@@ -97,7 +97,7 @@ export default function ContactPlanningForm() {
   }
 
   return (
-    <form className="ui-card p-5 sm:p-7" onSubmit={handleSubmit} noValidate>
+    <form className="ui-card flex h-full flex-col p-5 sm:p-7 lg:p-8" onSubmit={handleSubmit} noValidate>
       <div className="mb-5">
         <span className="ui-eyebrow mb-3">Planning Form</span>
         <h2 className="m-0 text-2xl font-extrabold leading-tight text-slate-950">Share your trip details</h2>
@@ -176,7 +176,7 @@ export default function ContactPlanningForm() {
         />
       </label>
 
-      <button type="submit" className="ui-btn ui-btn-primary mt-5 w-full">
+      <button type="submit" className="ui-btn ui-btn-primary mt-5 w-full lg:mt-auto">
         Send Planning Details
       </button>
     </form>

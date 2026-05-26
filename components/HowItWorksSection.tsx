@@ -51,7 +51,7 @@ export default function HowItWorksSection() {
 
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <Link
-            href="/paket-tour"
+            href="/packages"
             className="ui-btn ui-btn-primary"
           >
             View Packages

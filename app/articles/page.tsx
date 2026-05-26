@@ -29,7 +29,7 @@ export default function ArticlesPage() {
         <article className="ui-card mb-8 overflow-hidden p-3 sm:mb-12 sm:p-5">
           <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
             <Link
-              href={`/artikel/${featuredArticle.slug}`}
+              href={`/articles/${featuredArticle.slug}`}
               aria-label={`Read ${featuredArticle.title}`}
               className="group relative min-h-[260px] overflow-hidden rounded-lg bg-slate-50 no-underline sm:min-h-[360px]"
             >
@@ -54,7 +54,7 @@ export default function ArticlesPage() {
               </h2>
               <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">{featuredArticle.excerpt}</p>
               <Link
-                href={`/artikel/${featuredArticle.slug}`}
+                href={`/articles/${featuredArticle.slug}`}
                 className="ui-btn ui-btn-primary mt-6 w-full sm:w-fit"
               >
                 Read Article
@@ -67,7 +67,7 @@ export default function ArticlesPage() {
           {articles.map((article) => (
             <Link
               key={article.slug}
-              href={`/artikel/${article.slug}`}
+              href={`/articles/${article.slug}`}
               aria-label={`Read ${article.title}`}
               className="ui-card group overflow-hidden text-inherit no-underline transition duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
             >
