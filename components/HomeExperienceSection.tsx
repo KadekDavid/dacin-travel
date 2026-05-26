@@ -1,24 +1,6 @@
 import Link from "next/link";
 import HomeGallerySlider from "./HomeGallerySlider";
 
-const strengths = [
-  {
-    label: "Flexible Trips",
-    title: "Itinerary that follows your pace",
-    description: "Routes are arranged around your travel style, group needs, and preferred hotel area.",
-  },
-  {
-    label: "Local Support",
-    title: "Clear help from planning to pickup",
-    description: "Get practical destination advice, timing notes, and support before your Bali trip starts.",
-  },
-  {
-    label: "Clean Pricing",
-    title: "Simple package details",
-    description: "Know what is included, what is excluded, and how each package fits your budget.",
-  },
-];
-
 const gallery = [
   {
     title: "Nusa Dua",

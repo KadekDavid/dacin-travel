@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { allArticles } from "@/data/articles";
 import packagesDetail from "@/data/packages-detail.json";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dacin-travel.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

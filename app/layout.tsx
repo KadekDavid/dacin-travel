@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://dacin-travel.vercel.app"),
   icons: {
     icon: "https://res.cloudinary.com/dh1vnkssv/image/upload/v1777444021/logo_ai1i2p.png",  // atau "/favicon.ico"
   },
